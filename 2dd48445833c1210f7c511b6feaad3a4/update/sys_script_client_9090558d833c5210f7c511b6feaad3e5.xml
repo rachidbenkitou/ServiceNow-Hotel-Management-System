@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>email_address</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Email Format onCellEdit</name>
+        <order/>
+        <script><![CDATA[function onCellEdit(sysIDs, table, oldValues, newValue, callback) {
+    var saveAndClose = true;
+
+    // Assuming the email field is being edited; adjust the field name as needed
+    var emailField = "email_address"; // Change this to your actual email field name
+    var emailValue = newValue.trim(); // Assuming newValue is the new email being edited
+
+    // Regex pattern for validating email addresses
+    var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    // Validate the email address
+    if (!emailPattern.test(emailValue)) {
+        // Show an error message if invalid
+        g_form.showFieldMsg(emailField, "Please enter a valid email address in the format example@domain.com.", "error");
+        saveAndClose = false; // Prevent saving the change
+    } else {
+        // Hide any previous messages if valid
+        g_form.hideFieldMsg(emailField);
+    }
+
+    // Call the callback with the saveAndClose flag
+    callback(saveAndClose);
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 15:54:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9090558d833c5210f7c511b6feaad3e5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Validate Email Format onCellEdit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name>sys_script_client_9090558d833c5210f7c511b6feaad3e5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 15:55:29</sys_updated_on>
+        <table>x_1461372_hotel_guest</table>
+        <type>onCellEdit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

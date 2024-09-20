@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>This client script checks if the phone number field is empty. If it is, it displays an informational message indicating that the phone number cannot exceed the format of +212 followed by 9 digits.</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Phone Number Empty Check</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+       if (g_form.getValue("phone_number")=== "+212") {
+        g_form.showFieldMsg("phone_number", "The phone number cannot exceed +212 followed by 9 digits.", "info");
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 13:38:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8f41f4cd83745210f7c511b6feaad356</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Phone Number Empty Check</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name>sys_script_client_8f41f4cd83745210f7c511b6feaad356</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 13:41:25</sys_updated_on>
+        <table>x_1461372_hotel_guest</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</application>
+        <file_path/>
+        <instance_id>762182641b914e1078c7cb7b234bcb9b</instance_id>
+        <instance_name>dev251480</instance_name>
+        <name>sys_script_client_8f41f4cd83745210f7c511b6feaad356</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;This client script checks if the phone number field is empty. If it is, it displays an informational message indicating that the phone number cannot exceed the format of +212 followed by 9 digits.&lt;/description&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Phone Number Empty Check&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+       if (g_form.getValue("phone_number")=== "+212") {
+        g_form.showFieldMsg("phone_number", "The phone number cannot exceed +212 followed by 9 digits.", "info");
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-20 13:38:48&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8f41f4cd83745210f7c511b6feaad356&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Phone Number Empty Check&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Hotel Booking System" source="x_1461372_hotel"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_8f41f4cd83745210f7c511b6feaad356&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-20 13:41:25&lt;/sys_updated_on&gt;&lt;table&gt;x_1461372_hotel_guest&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1302008860</payload_hash>
+        <record_name>Phone Number Empty Check</record_name>
+        <reverted_from/>
+        <source>74eec40183bc1210f7c511b6feaad302</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 13:41:25</sys_created_on>
+        <sys_id>39b2300983b45210f7c511b6feaad3a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1920faa81230000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 13:41:25</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>bdb230092bb45210a5941cf4e32fbda6</update_guid>
+        <update_guid_history>bdb230092bb45210a5941cf4e32fbda6:1302008860,3982b84d08745210894f884f0af5e8d3:250404245,fe22bcc1d1b45210ad909c7fe3cb00f1:1137887809,af12740592b45210a74eabbfc67e5cb8:1252742886</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 13:46:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>301fae16ada646f48f94a39b48c3b7d1</sys_id>
+        <sys_metadata>8f41f4cd83745210f7c511b6feaad356</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Phone Number Empty Check</sys_name>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_parent display_value="Guest">6ff50cc9833c1210f7c511b6feaad361</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_scope_delete display_value="">04864376358248ab840d8f48c7fb6731</sys_scope_delete>
+        <sys_update_name>sys_script_client_8f41f4cd83745210f7c511b6feaad356</sys_update_name>
+        <sys_update_version display_value="sys_script_client_8f41f4cd83745210f7c511b6feaad356">39b2300983b45210f7c511b6feaad3a7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 13:46:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

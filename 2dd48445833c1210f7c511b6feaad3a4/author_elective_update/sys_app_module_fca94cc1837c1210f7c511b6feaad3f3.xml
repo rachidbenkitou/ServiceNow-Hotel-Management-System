@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application/>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Room_Status</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1461372_hotel_room_status</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1461372_hotel.room_status_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 10:41:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fca94cc1837c1210f7c511b6feaad3f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Room_Status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name>sys_app_module_fca94cc1837c1210f7c511b6feaad3f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 10:41:57</sys_updated_on>
+        <timeline_page/>
+        <title>Room_Status</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</application>
+        <file_path/>
+        <instance_id>762182641b914e1078c7cb7b234bcb9b</instance_id>
+        <instance_name>dev251480</instance_name>
+        <name>sys_app_module_fca94cc1837c1210f7c511b6feaad3f3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application/><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Room_Status</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1461372_hotel_room_status</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_1461372_hotel.room_status_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-20 10:41:57</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fca94cc1837c1210f7c511b6feaad3f3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Room_Status</sys_name><sys_overrides/><sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package><sys_policy/><sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope><sys_update_name>sys_app_module_fca94cc1837c1210f7c511b6feaad3f3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-20 10:41:57</sys_updated_on><timeline_page/><title>Room_Status</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1436538241</payload_hash>
+        <record_name>Room_Status</record_name>
+        <reverted_from/>
+        <source>74eec40183bc1210f7c511b6feaad302</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 11:18:44</sys_created_on>
+        <sys_id>ab02904183fc1210f7c511b6feaad31f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1920f27df320000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 11:18:44</sys_updated_on>
+        <type>Module</type>
+        <update_guid>a7029041e8fc121091832cdf4cd7d01f</update_guid>
+        <update_guid_history>a7029041e8fc121091832cdf4cd7d01f:0,b8a94cc1437c1210b409cf02913ec5f5:1244377842</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Room_Status">256210c183fc1210f7c511b6feaad3a3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 11:20:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>820eaa3370ce4a4897bf1857e27c0c64</sys_id>
+        <sys_metadata>fca94cc1837c1210f7c511b6feaad3f3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Room_Status</sys_name>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_scope_delete display_value="">04864376358248ab840d8f48c7fb6731</sys_scope_delete>
+        <sys_update_name>sys_app_module_fca94cc1837c1210f7c511b6feaad3f3</sys_update_name>
+        <sys_update_version display_value="sys_app_module_fca94cc1837c1210f7c511b6feaad3f3">ab02904183fc1210f7c511b6feaad31f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 11:20:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

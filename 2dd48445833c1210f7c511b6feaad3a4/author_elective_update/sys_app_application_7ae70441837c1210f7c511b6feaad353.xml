@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Payment_Status</name>
+        <order>100</order>
+        <roles>x_1461372_hotel.payment_status_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 10:34:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7ae70441837c1210f7c511b6feaad353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Payment_Status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name>sys_app_application_7ae70441837c1210f7c511b6feaad353</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 10:34:26</sys_updated_on>
+        <title>Payment_Status</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</application>
+        <file_path/>
+        <instance_id>762182641b914e1078c7cb7b234bcb9b</instance_id>
+        <instance_name>dev251480</instance_name>
+        <name>sys_app_application_7ae70441837c1210f7c511b6feaad353</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Payment_Status</name><order>100</order><roles>x_1461372_hotel.payment_status_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-20 10:34:26</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7ae70441837c1210f7c511b6feaad353</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Payment_Status</sys_name><sys_overrides/><sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package><sys_policy/><sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope><sys_update_name>sys_app_application_7ae70441837c1210f7c511b6feaad353</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-20 10:34:26</sys_updated_on><title>Payment_Status</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>-1374777471</payload_hash>
+        <record_name>Payment_Status</record_name>
+        <reverted_from/>
+        <source>a9d48445833c1210f7c511b6feaad3a7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 10:34:26</sys_created_on>
+        <sys_id>f2e70441837c1210f7c511b6feaad356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1920eff51ba0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 10:34:26</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>f6e70441177c12103966259d4a8c3f55</update_guid>
+        <update_guid_history>f6e70441177c12103966259d4a8c3f55:-1374777471</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Payment_Status">1912dccd83bc1210f7c511b6feaad326</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 11:18:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>1f19e857825844b884b15d4f77c6e010</sys_id>
+        <sys_metadata>7ae70441837c1210f7c511b6feaad353</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Payment_Status</sys_name>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_scope_delete display_value="">04864376358248ab840d8f48c7fb6731</sys_scope_delete>
+        <sys_update_name>sys_app_application_7ae70441837c1210f7c511b6feaad353</sys_update_name>
+        <sys_update_version display_value="sys_app_application_7ae70441837c1210f7c511b6feaad353">f2e70441837c1210f7c511b6feaad356</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 11:18:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

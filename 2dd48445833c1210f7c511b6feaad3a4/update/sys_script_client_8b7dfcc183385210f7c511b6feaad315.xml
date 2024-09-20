@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Date on Submit</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    var checkin = g_form.getValue("checkin");
+    var checkout = g_form.getValue("checkout");
+
+    var checkinDate = new Date(checkin);
+    var checkoutDate = new Date(checkout);
+
+    // Get the current date and set the time to midnight
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    // Check if check-out date is after check-in date
+    if (checkoutDate <= checkinDate) {
+        g_form.showFieldMsg("checkout", "Check-out date must be after check-in date.", "error");
+        return false; // Prevent submission
+    }
+
+    // Check if check-in or check-out dates are in the past
+    if (checkinDate < today || checkoutDate < today) {
+        g_form.showFieldMsg("checkin", "Check-in and check-out dates cannot be in the past.", "error");
+        return false; // Prevent submission
+    }
+
+    return true; // Allow submission if all validations pass
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 14:28:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8b7dfcc183385210f7c511b6feaad315</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Validate Date on Submit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name>sys_script_client_8b7dfcc183385210f7c511b6feaad315</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 15:51:22</sys_updated_on>
+        <table>x_1461372_hotel_booking</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

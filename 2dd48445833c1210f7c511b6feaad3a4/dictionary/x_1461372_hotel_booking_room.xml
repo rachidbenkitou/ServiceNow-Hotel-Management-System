@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="764ac8c1837c1210f7c511b6feaad3ba" label="Booking_Room" max_length="40" name="x_1461372_hotel_booking_room" type="collection">
-        <element label="Booking ID" max_length="32" name="booking_id" reference="x_1461372_hotel_booking" type="reference"/>
+        <element label="Booking" max_length="32" name="booking_id" reference="x_1461372_hotel_booking" type="reference"/>
         <element label="Room ID" max_length="32" name="room_id" reference="x_1461372_hotel_room" type="reference"/>
         <index name="index">
             <element name="booking_id"/>

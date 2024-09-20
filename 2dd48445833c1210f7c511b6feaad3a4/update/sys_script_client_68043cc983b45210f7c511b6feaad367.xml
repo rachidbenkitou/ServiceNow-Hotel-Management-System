@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Validates phone numbers and email addresses during form submission, ensuring they meet the specified format requirements. Displays error messages for invalid inputs and prevents submission if any field is incorrect.</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Phone and Email on Submit</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    var phone_number = g_form.getValue("phone_number").trim();
+    var email_address = g_form.getValue("email_address").trim();
+
+    // Initialize flags for validations
+    var validPhone = true;
+    var validEmail = true;
+
+    // Regex Pattern for validating Moroccan phone numbers
+    var phonePattern = /^\+212[657]\d{8}$/;
+    // Regex Pattern for validating email addresses
+    var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    // Hide previous messages for phone number and email
+    g_form.hideFieldMsg("phone_number");
+    g_form.hideFieldMsg("email_address");
+
+    // Validate phone number
+    if (!phonePattern.test(phone_number)) {
+        g_form.showFieldMsg("phone_number", "Please enter a valid Moroccan phone number in the format +212 6XXXXXXXX or +212 5XXXXXXXX or +212 7XXXXXXXX.", "error");
+        validPhone = false; // Set to false if invalid
+    }
+
+    // Validate email address
+    if (!emailPattern.test(email_address)) {
+        g_form.showFieldMsg("email_address", "Please enter a valid email address in the format example@domain.com.", "error");
+        validEmail = false; // Set to false if invalid
+    }
+
+    // Only submit if both validations are true
+    return validPhone && validEmail; // Allow submission if both are valid
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 13:49:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>68043cc983b45210f7c511b6feaad367</sys_id>
+        <sys_mod_count>56</sys_mod_count>
+        <sys_name>Validate Phone and Email on Submit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name>sys_script_client_68043cc983b45210f7c511b6feaad367</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 15:47:28</sys_updated_on>
+        <table>x_1461372_hotel_guest</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

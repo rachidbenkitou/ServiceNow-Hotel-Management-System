@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Floor</name>
+        <order>100</order>
+        <roles>x_1461372_hotel.floor_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 10:40:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1d3980c1837c1210f7c511b6feaad3b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Floor</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name>sys_app_application_1d3980c1837c1210f7c511b6feaad3b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 10:40:04</sys_updated_on>
+        <title>Floor</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</application>
+        <file_path/>
+        <instance_id>762182641b914e1078c7cb7b234bcb9b</instance_id>
+        <instance_name>dev251480</instance_name>
+        <name>sys_app_application_1d3980c1837c1210f7c511b6feaad3b0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Floor</name><order>100</order><roles>x_1461372_hotel.floor_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-20 10:40:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1d3980c1837c1210f7c511b6feaad3b0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Floor</sys_name><sys_overrides/><sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package><sys_policy/><sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope><sys_update_name>sys_app_application_1d3980c1837c1210f7c511b6feaad3b0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-20 10:40:04</sys_updated_on><title>Floor</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>1679989123</payload_hash>
+        <record_name>Floor</record_name>
+        <reverted_from/>
+        <source>a9d48445833c1210f7c511b6feaad3a7</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 10:40:05</sys_created_on>
+        <sys_id>553980c1837c1210f7c511b6feaad3b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1920f047c020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 10:40:05</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>593980c1837c12102513eb277b5088b2</update_guid>
+        <update_guid_history>593980c1837c12102513eb277b5088b2:1679989123</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Floor">c712d44183fc1210f7c511b6feaad3d2</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 11:18:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>1a082e1c8e35491182fc7dbfdbb63ba1</sys_id>
+        <sys_metadata>1d3980c1837c1210f7c511b6feaad3b0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Floor</sys_name>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_scope_delete display_value="">04864376358248ab840d8f48c7fb6731</sys_scope_delete>
+        <sys_update_name>sys_app_application_1d3980c1837c1210f7c511b6feaad3b0</sys_update_name>
+        <sys_update_version display_value="sys_app_application_1d3980c1837c1210f7c511b6feaad3b0">553980c1837c1210f7c511b6feaad3b3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 11:18:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

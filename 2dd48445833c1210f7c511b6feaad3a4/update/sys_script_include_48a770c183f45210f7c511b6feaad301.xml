@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1461372_hotel.ValidationUtils </api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ValidationUtils </name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ValidationUtils = Class.create();
+ValidationUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    validateEmail: function() {
+        // Retrieve the email parameter and trim spaces
+        var email = this.getParameter('sysparm_email');
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailPattern.test(email);
+    },
+
+    validateMoroccanPhone: function() {
+        // Retrieve the phone parameter and trim spaces
+        var phone = this.getParameter('sysparm_phone');
+        var phonePattern = /^\+212[657]\d{8}$/;
+        return phonePattern.test(phone);
+    },
+
+    type: 'ValidationUtils'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 14:03:52</sys_created_on>
+        <sys_id>48a770c183f45210f7c511b6feaad301</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>ValidationUtils </sys_name>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name>sys_script_include_48a770c183f45210f7c511b6feaad301</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 15:42:22</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>48a770c183f45210f7c511b6feaad301</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 14:03:52</sys_created_on>
+        <sys_id>26d7784d83b45210f7c511b6feaad34a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 14:03:52</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

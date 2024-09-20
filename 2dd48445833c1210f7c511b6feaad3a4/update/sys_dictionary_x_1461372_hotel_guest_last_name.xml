@@ -11,7 +11,7 @@
         <column_label>LastName</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>RRR</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -53,7 +53,7 @@
         <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
         <sys_update_name>sys_dictionary_x_1461372_hotel_guest_last_name</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-20 10:26:02</sys_updated_on>
+        <sys_updated_on>2024-09-20 14:51:45</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="6ff50cc9833c1210f7c511b6feaad361" label="Guest" max_length="40" name="x_1461372_hotel_guest" type="collection">
-        <element attributes="edge_encryption_enabled=true" label="LastName" max_length="100" name="last_name" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="FirstName" max_length="100" name="first_name" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Phone number" max_length="254" name="phone_number" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Email address" max_length="254" name="email_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="RRR" label="LastName" max_length="100" name="last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="RRR" label="FirstName" max_length="100" name="first_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="+212655407529" label="Phone number" max_length="13" name="phone_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="a@gmail.com" label="Email address" max_length="254" name="email_address" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
     </element>
 </database>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="d50c8445837c1210f7c511b6feaad3f6" label="Room_Class_Freature" max_length="40" name="x_1461372_hotel_room_class_freature" type="collection">
-        <element label="Room class ID" max_length="32" name="room_class_id" reference="x_1461372_hotel_room_class" type="reference"/>
-        <element label="Feature ID" max_length="32" name="feature_id" reference="x_1461372_hotel_feature" type="reference"/>
+        <element label="Room class" max_length="32" name="room_class_id" reference="x_1461372_hotel_room_class" type="reference"/>
+        <element label="Feature" max_length="32" name="feature_id" reference="x_1461372_hotel_feature" type="reference"/>
         <index name="index">
             <element name="feature_id"/>
         </index>
