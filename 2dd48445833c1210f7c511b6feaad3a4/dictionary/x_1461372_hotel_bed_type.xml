@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c97b8045837c1210f7c511b6feaad38b" label="Bed_Type" max_length="40" name="x_1461372_hotel_bed_type" type="collection">
+        <element label="Bed type name" max_length="100" name="bed_type_name" type="string"/>
+    </element>
+</database>

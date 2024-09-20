@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b5494481837c1210f7c511b6feaad360" label="Room_Class" max_length="40" name="x_1461372_hotel_room_class" type="collection">
+        <element label="Class name" max_length="100" name="class_name" type="string"/>
+        <element label="Base price" max_length="20" name="base_price" type="decimal"/>
+    </element>
+</database>

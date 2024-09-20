@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e09bcc85837c1210f7c511b6feaad336" label="Feature" max_length="40" name="x_1461372_hotel_feature" type="collection">
+        <element label="Feature name" max_length="100" name="feature_name" type="string"/>
+    </element>
+</database>

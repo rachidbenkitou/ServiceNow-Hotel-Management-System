@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a9bbcc85837c1210f7c511b6feaad306" label="Room_Class_Bed_Type" max_length="40" name="x_1461372_hotel_room_class_bed_type" type="collection">
+        <element label="Room class ID" max_length="32" name="room_class_id" reference="x_1461372_hotel_room_class" type="reference"/>
+        <element label="Num beds" max_length="40" name="num_beds" type="integer"/>
+        <element label="Bed type ID" max_length="32" name="bed_type_id" reference="x_1461372_hotel_bed_type" type="reference"/>
+        <index name="index">
+            <element name="bed_type_id"/>
+        </index>
+        <index name="index2">
+            <element name="room_class_id"/>
+        </index>
+    </element>
+</database>

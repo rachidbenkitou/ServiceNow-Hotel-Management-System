@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="febac845837c1210f7c511b6feaad30a" label="Booking_Addon" max_length="40" name="x_1461372_hotel_booking_addon" type="collection">
+        <element label="Addon ID" max_length="32" name="addon_id" reference="x_1461372_hotel_addon" type="reference"/>
+        <element label="Booking ID" max_length="32" name="booking_id" reference="x_1461372_hotel_booking" type="reference"/>
+        <index name="index">
+            <element name="addon_id"/>
+        </index>
+        <index name="index2">
+            <element name="booking_id"/>
+        </index>
+    </element>
+</database>

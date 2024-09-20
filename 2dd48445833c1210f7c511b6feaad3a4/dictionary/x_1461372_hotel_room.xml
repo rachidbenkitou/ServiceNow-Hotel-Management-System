@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ede88481837c1210f7c511b6feaad301" label="Room" max_length="40" name="x_1461372_hotel_room" type="collection">
+        <element label="Floor ID" max_length="32" name="floor_id" reference="x_1461372_hotel_floor" type="reference"/>
+        <element label="Room number" max_length="40" name="room_number" type="integer"/>
+        <element label="Room class ID" max_length="32" name="room_class_id" reference="x_1461372_hotel_room_class" type="reference"/>
+        <element label="Status ID" max_length="32" name="status_id" reference="x_1461372_hotel_room_status" type="reference"/>
+        <index name="index">
+            <element name="floor_id"/>
+        </index>
+        <index name="index2">
+            <element name="room_class_id"/>
+        </index>
+        <index name="index3">
+            <element name="status_id"/>
+        </index>
+    </element>
+</database>

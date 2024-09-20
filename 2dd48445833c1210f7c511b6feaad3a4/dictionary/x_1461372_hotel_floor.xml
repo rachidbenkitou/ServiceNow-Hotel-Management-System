@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7919c081837c1210f7c511b6feaad374" label="Floor" max_length="40" name="x_1461372_hotel_floor" type="collection">
+        <element label="Floor number" max_length="40" name="floor_number" type="integer"/>
+    </element>
+</database>

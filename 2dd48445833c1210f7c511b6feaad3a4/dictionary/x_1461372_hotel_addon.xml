@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e78a04c1837c1210f7c511b6feaad307" label="Addon" max_length="40" name="x_1461372_hotel_addon" type="collection">
+        <element label="Addon name" max_length="100" name="addon_name" type="string"/>
+        <element label="price" max_length="20" name="price" type="decimal"/>
+    </element>
+</database>

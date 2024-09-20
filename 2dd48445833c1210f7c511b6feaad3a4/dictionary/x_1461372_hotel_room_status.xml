@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0a89cc81837c1210f7c511b6feaad369" label="Room_Status" max_length="40" name="x_1461372_hotel_room_status" type="collection">
+        <element label="Status name" max_length="100" name="status_name" type="string"/>
+    </element>
+</database>

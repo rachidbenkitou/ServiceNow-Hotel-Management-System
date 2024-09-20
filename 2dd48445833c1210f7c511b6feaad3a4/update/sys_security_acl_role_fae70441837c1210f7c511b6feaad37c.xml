@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-20 10:34:27</sys_created_on>
+        <sys_id>fae70441837c1210f7c511b6feaad37c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1461372_hotel_payment_status.x_1461372_hotel.payment_status_user</sys_name>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_security_acl display_value="x_1461372_hotel_payment_status">76e70441837c1210f7c511b6feaad379</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_fae70441837c1210f7c511b6feaad37c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-20 10:34:27</sys_updated_on>
+        <sys_user_role display_value="x_1461372_hotel.payment_status_user" name="x_1461372_hotel.payment_status_user">aee74801837c1210f7c511b6feaad364</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
