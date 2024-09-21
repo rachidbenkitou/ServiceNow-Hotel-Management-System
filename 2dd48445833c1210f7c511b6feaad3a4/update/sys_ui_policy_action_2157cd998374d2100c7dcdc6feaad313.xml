@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>num_children</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-21 09:50:07</sys_created_on>
+        <sys_id>2157cd998374d2100c7dcdc6feaad313</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>num_children</sys_name>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name>sys_ui_policy_action_2157cd998374d2100c7dcdc6feaad313</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-21 09:50:07</sys_updated_on>
+        <table>x_1461372_hotel_booking</table>
+        <ui_policy display_value="This UI Policy makes the booking fields mandatory.">edd6c9598374d2100c7dcdc6feaad3c8</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=2157cd998374d2100c7dcdc6feaad313"/>
+</record_update>
