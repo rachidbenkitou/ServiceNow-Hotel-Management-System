@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="764ac8c1837c1210f7c511b6feaad3ba" label="Booking_Room" max_length="40" name="x_1461372_hotel_booking_room" type="collection">
+        <element choice="3" default="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Ask for approval" sequence="2" value="4"/>
+                <element inactive_on_update="false" label="Rejected" sequence="4" value="3"/>
+                <element inactive_on_update="false" label="Open" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Approved" sequence="3" value="2"/>
+            </choice>
+        </element>
         <element label="Booking" max_length="32" name="booking_id" reference="x_1461372_hotel_booking" type="reference"/>
-        <element label="Room ID" max_length="32" name="room_id" reference="x_1461372_hotel_room" type="reference"/>
+        <element display="true" label="Room" max_length="32" name="room_id" reference="x_1461372_hotel_room" type="reference"/>
         <index name="index">
             <element name="booking_id"/>
         </index>

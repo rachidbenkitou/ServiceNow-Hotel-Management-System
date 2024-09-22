@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Room ID</column_label>
+        <column_label>Room</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -21,7 +21,7 @@
         <delete_roles/>
         <dependent/>
         <dependent_on_field/>
-        <display>false</display>
+        <display>true</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
         <dynamic_default_value/>
@@ -52,13 +52,13 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-20 10:45:51</sys_created_on>
-        <sys_name>room_id</sys_name>
+        <sys_name>Room</sys_name>
         <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
         <sys_update_name>sys_dictionary_x_1461372_hotel_booking_room_room_id</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-20 10:45:51</sys_updated_on>
+        <sys_updated_on>2024-09-21 22:22:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

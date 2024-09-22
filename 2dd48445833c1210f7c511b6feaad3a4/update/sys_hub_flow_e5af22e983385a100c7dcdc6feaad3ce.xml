@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=10618000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>hbs_ask_for_approval_if_booking_amount_is_higher</internal_name>
+        <label_cache>[{"name":"2acf61a3-8d34-4417-ae70-ca003924d9d2.record","label":"3 - Update Record➛x_1461372_hotel_booking_room Record","reference":"x_1461372_hotel_booking_room","reference_display":"Booking_Room","type":"reference","base_type":"reference","usedInstances":{"1b8551ee-2e83-4305-91f1-f812cda211ee":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Booking_Room Record","reference":"x_1461372_hotel_booking_room","reference_display":"Booking_Room","type":"reference","base_type":"reference","usedInstances":{"2acf61a3-8d34-4417-ae70-ca003924d9d2":["record"],"54b20bfc-2b16-4f32-9640-94a85869da72":["booking_room"],"63fb61d4-4ab6-46a3-ab39-ed670a487c91":["booking_room"],"01183c44-e800-4e25-8917-9b46a81ca873":["booking_room"]},"attributes":{}},{"name":"Created_1.current.booking_id.booking_amount","label":"Trigger - Record Created➛Booking_Room Record➛Booking➛Booking amount","reference":"","reference_display":"Booking amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1461372_hotel_booking","column_name":"booking_amount","usedInstances":{"3f8ebc65-247f-4e73-8e61-47568e3ff747":["condition"]}},{"name":"Created_1.current.room_id.availability","label":"Trigger - Record Created➛Booking_Room Record➛Room➛Availability","reference":"","reference_display":"Availability","type":"boolean","base_type":"boolean","parent_table_name":"x_1461372_hotel_room","column_name":"availability","usedInstances":{"f41964c8-c634-4d86-b8f4-531e0b2cb13c":["condition"]}},{"name":"{{static.6a0f0fad83b09a100c7dcdc6feaad349}}","label":"Hotel Booking Approvals","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"1b8551ee-2e83-4305-91f1-f812cda211ee":["approval_conditions"]}},{"name":"1b8551ee-2e83-4305-91f1-f812cda211ee.approval_state","label":"4 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"cb48f40b-2168-42f3-8a98-be9f812348c8":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>c62857e983749a100c7dcdc6feaad32a</master_snapshot>
+        <master_snapshot_digest/>
+        <name>HBS:  Create Booking.</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>aa2897e983749a100c7dcdc6feaad300</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 12:04:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e5af22e983385a100c7dcdc6feaad3ce</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>HBS:  Create Booking.</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name>sys_hub_flow_e5af22e983385a100c7dcdc6feaad3ce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:15</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e5af22e983385a100c7dcdc6feaad3ce"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e5af22e983385a100c7dcdc6feaad3ce"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1461372_hotel_booking_room">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aa2897e983749a100c7dcdc6feaad300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:15</sys_updated_on>
+        <table>x_1461372_hotel_booking_room</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>e5af22e983385a100c7dcdc6feaad3ce</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:15</sys_created_on>
+        <sys_id>262897e983749a100c7dcdc6feaad301</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:15</sys_updated_on>
+        <trigger display_value="">aa2897e983749a100c7dcdc6feaad300</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e5af22e983385a100c7dcdc6feaad3ce^sys_idNOT IN262897e983749a100c7dcdc6feaad301"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e5af22e983385a100c7dcdc6feaad3ce"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e5af22e983385a100c7dcdc6feaad3ce^sys_idNOT INe9af22e983385a100c7dcdc6feaad3d2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e5af22e983385a100c7dcdc6feaad3ce</id>
+        <name>HBS: Ask for approval if booking amount is higher.</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 12:04:14</sys_created_on>
+        <sys_id>e9af22e983385a100c7dcdc6feaad3d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 12:04:14</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=e9af22e983385a100c7dcdc6feaad3d2"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e5af22e983385a100c7dcdc6feaad3ce^sys_idNOT IN14fe83ad83b09a100c7dcdc6feaad3f5,98fecfe983b09a100c7dcdc6feaad339"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="HBS:  Create Booking.">e5af22e983385a100c7dcdc6feaad3ce</model>
+        <model_id>e5af22e983385a100c7dcdc6feaad3ce</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e5af22e983385a100c7dcdc6feaad3ce</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:20:57</sys_created_on>
+        <sys_id>14fe83ad83b09a100c7dcdc6feaad3f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:20:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=14fe83ad83b09a100c7dcdc6feaad3f5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="HBS:  Create Booking.">e5af22e983385a100c7dcdc6feaad3ce</model>
+        <model_id>e5af22e983385a100c7dcdc6feaad3ce</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e5af22e983385a100c7dcdc6feaad3ce</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:20:57</sys_created_on>
+        <sys_id>98fecfe983b09a100c7dcdc6feaad339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:20:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=98fecfe983b09a100c7dcdc6feaad339"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e5af22e983385a100c7dcdc6feaad3ce"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e5af22e983385a100c7dcdc6feaad3ce"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e5af22e983385a100c7dcdc6feaad3ce^sys_idNOT IN5cfe83ad83b09a100c7dcdc6feaad3fb"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">e5af22e983385a100c7dcdc6feaad3ce</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:20:57</sys_created_on>
+        <sys_id>5cfe83ad83b09a100c7dcdc6feaad3fb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:26:46</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VZXW/bNhT9K4KeNiAD9GFbVt7aJMUCdM3meNtDkBGURNpCadKTKCVekf++S4uyZVlKZDvZ7PSlgEnq8p7Dc88l07tvJsMBYea5OcYBI+aZGXNJEo7ZeDEnMCzVMOJ4puZmmEdYimRhnsskI2emSCKSmOf2mZljlpHbRXodwUewdPmF/tzU0/D7Edm9ge16DpoKSRgKhPga8wlKhJjBsihO5wwv/tCrP+rZUTE7xwlElWrHb2Y4jVmUEG6e391D1mrbkIbYd4gVurbrOJblDHt2MHAD24lcTCwLQtTR1tKUDaDXGMmjJDwisBXFLCUNfCQERzecLVYrpkBnQcgMP6bxPxB9aKl1lEDuISnmwqmIQ3Izl7HgxUiRUDEpWDbjX4pEFUeE4ozJkiMYyVKCIjJXuand9Nb0dioeRuVGn2K+hKEnmQgxW/3CUiZxkEmSKmZpzIBjVJCQiixZpjm6urgZXaI/P4wvfr4aodHV7Xh0fTG+ujSflnjQ35mKWGSoc0EFnKfVwX6KCVMnpY4bwZmdmWmYxHP5IZRxTnQ+T2drVSYZhyBoxfyWPgvqVhx+jlNg4A5AlPwsQ8I8/axDjjJuCDgj+McIswTYkUZ5/vR6hieaVfprKbclK1opOU4QmqF0kaJpFiDgbTIBsmI+zyTy/KFvD3CLAL1wg5tlSUDoO9O8f1LHRRgJZUVd9Pe0+uuXOE2hGCokrTAq8W1DXKEDlRolgwXU9LSw3m+Uml5U1qVltbrPtnrymipqhtPBZGyb0oBQx/IUattyA2pbntXHNHItK3QqJrO9fWtesqbmKrjnbEePdPGdXpvvpMuCYR3Ko85emWW1YjtpL98Uro7jqIPW9nZxhKnVbNrdyadXiiuGLzeF9xy0V7Z3HOUYvohKjF3su4NLP0wJRymRUtXt7jbNoR6W3+Bik4qbKWEbiiAqEuOL4D9dr9cZtwScAvI8KT+rencX0BAsMd4V6kDIab1jKaQfYXwDqSrSljP/jppYrbjyTRb3aGKkN+z71A09wAxti/ZIgO2e08e+N3CpX2tite3bEzueNtbRNPJW+2lqIF2LMm+s7VUrqbWkfXRfU4AO7b7QQL9fUg5q3WWZtXbufZI9ja5OmXgADezR0AMcfp0kIuPRls9DTCPmxnqF8YPm9sfTsvRqRwMNkOfxbq44HZSHNK61fsrixHyxV8tyqR34pEcseG650LKCvu8HIXYo9QYecexay1pv3JjN8TSqDhWRN5VU2wOnUW15k0h3eHX9/wkeZOBac43+XcwdvxtfCB7FsmildS8up1Jzz1INK8HLo/jr6rftQi0GX6rVwQDjiLS5U0ArtVqF1ZCMbED4JrVqvfVfZYs/EO+tqJmICLtchzM3+oGi5QFzmSIpEI4iVCGsowQLbDu89QFfctCDX21MkKDVfnkpDJgwYBMjpobGSCIjWBhySsAzGLgHbGio3U/sAVi9LWwjX12j3zXuwm23nv0wvER2WsAOftHXSujQKxKJPNzvu17zq96vX5GaUnghw+O5Nu1sFHmT7zz7nt0tbj1m44u2ovPNw+74gH/HqN/sgteQxfHf9jYLkKnuudViJyyOSDn3CkakI+Vrw9ndgujQD/u212JBw36rBenNn0tMNsD+T+6CqtNo5RzX/9S/lvDu/wWNc83LCCIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e5af22e983385a100c7dcdc6feaad3ce^sys_idNOT IN50fec3ad83b09a100c7dcdc6feaad327,dcfec3ad83b09a100c7dcdc6feaad325"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">e5af22e983385a100c7dcdc6feaad3ce</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>3f8ebc65-247f-4e73-8e61-47568e3ff747</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:20:58</sys_created_on>
+        <sys_id>50fec3ad83b09a100c7dcdc6feaad327</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:26:46</sys_updated_on>
+        <ui_id>1b8551ee-2e83-4305-91f1-f812cda211ee</ui_id>
+        <values>H4sIAAAAAAAA/+1X32/aMBD+V6o8A0sI5ddbJcS0SVultupLqSLHvhRvxs4Spy2L+N93TpxAoUsRo9PW7dEX39333X0+Oze5w5kzdgbDqAujUdcNPdf1XXd4St2hD6E/6A98Ql2n5UiyANyZAFUJw/U9EZkx5HmX0KjvEb89ZH6v3et5gzaBgdumBGONuj02Yt1O6bdaoSfjaSzI8toGQAudc8ESkM745rblxCTBXBoSZ5xvfdLLGAJBQhDoOFE0W4DUJx8mGGNfHpX3RUVkm5jJgWtmowfcGPGTweO2HHjUIBlgtoiIFFrOgkhGtEqWzlgnGRoSIOxcimW9Y86lLokuyGPKv2N4v2v2RYDMaF0ExSmcx5orWVo0CUX1UYlsIT+XUE0NISKZ0Bs1zFIIGMQGm8lWQoku5+rhosoz5bJgYWEJRYmoV0TrhIeZhtSUHQQU5Bckjrm8C+JE3fPCGaEsOncCF51IqAfMmfI72SHU4O5gJUhnivZJYb4mCTckPmEYdF4VpINvmclb0rCAg4JzSRh3pTThsT7DmPdgEa5aVqshbewxXbe0DLeW6mPg9fqeP+gGc6VBBKFSXw25RKnFri5f2H2YZq8MpJOij6296Txx3qVnBVssA1mGtnr1mvVqLfsIdui+smBt6r9MsS+J1fWausuG625iPkRMRBBxEJsDNtVEZ+muPmv7YUqcmjRPlLgH1sr5zII9mVqwPyNhtVkst7TZPaI23ddW59sdp7Sx6+Cvm/tFZYl8RqBHvNJ3RbkHvMr5Y4lvW5PbsBsk6f+X5J8gyd5pY8/hmXlDlWTc4Es3hFlOKUjP5PL9TZ6bgclpp0/cyI1wnvmhOyKYgQ4YZbQfASH4gB2tVre7iv6VUIcdhXrEXmQC0uo47FGa+oFr/RpLZQ9D/TGxTvZA9I713v0N5+FtPiBoY8Oj0brBLMNyEL354M1nTgly5oxnjlQSZk5r5phdgel8YcYdCK7+UNjyfLUqLVlCbABvY7n2ZmSZFjtTOgeG6imsTyylpK39mD+AlzbByQRxv7viG7fGy1Wr/yKz0v/ZQtrjUTMpK8c374zTo90ZvX/zhCBMHlQDyFwROFQOPja3PwCaT/7e0hAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">e5af22e983385a100c7dcdc6feaad3ce</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>3f8ebc65-247f-4e73-8e61-47568e3ff747</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:20:58</sys_created_on>
+        <sys_id>dcfec3ad83b09a100c7dcdc6feaad325</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:20:58</sys_updated_on>
+        <ui_id>2acf61a3-8d34-4417-ae70-ca003924d9d2</ui_id>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lYBnQZAsx018C2oY6KEJkBa5pAFBkWubKCWqfDh2Df97lxLlOE6bGEZ6KFDeuI/ZmeWA9xsiBRmTIYgsv8xHvMiLYpBlg4thXo6KMh+IggHkJCE1qwArDXBtBN6XTPkQ2Gw+GmAOBM1T7o2B2m23mBfSNoqt72IZRvhCKoF5Mr5/SEjDDCI6MGS8OUi5dQNUsRIUNk409xWCnn2aIMaxbPvu257uIf0wA+8iolMZgpgKfPIsIbByUAvAcTOmLCSkYrVgTps1GTvjMYCqxU2t1ruKhaxdp7RiKyt/Iv4wC3UzQGl8twUtOdw0Tuq6izhWqj6pla/q645rWCLMmFdub4neAhXQBG5hWkdl9mWhH2/7OVNZtzIiLaU5U7sbc87I0juwYe+goFVfsaaR9Zw2Ri9l24xUqnSu8JLOlH7EmVbO65TxwDvFTbB0ivFJG75jRgYRnxEGm7etaPrDh7mdjEiYtppbwbR9ESy13MjGXSHwEiLNbRJ9WZ6/9tL88ulh9zCfvLmi+XCUFx8GdKEdKFpq/T3INFpXLy36RvVp9v0aeJ1dd7yO1fSs+Q8ao4GfxaJ/z9/Nvxd/279x9D9m4Ldsmw1e/aD2nrR1qt2zrHXMefvNZ1khhi89epg+0ZRQIaiDsw42OZp1DzCVoIT9jYzelXEAXcYBu5/13ayZj7L2/P9gT/lgH34BZhJOr/oHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e5af22e983385a100c7dcdc6feaad3ce^sys_idNOT IN102893e983749a100c7dcdc6feaad356,5c2893e983749a100c7dcdc6feaad37e,dc2893e983749a100c7dcdc6feaad380"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">e5af22e983385a100c7dcdc6feaad3ce</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>cb48f40b-2168-42f3-8a98-be9f812348c8</parent_ui_id>
+        <subflow display_value="HBS: Change Booking Room Status and Send Email to guest.">14f4972583749a100c7dcdc6feaad3c7</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/81Vy27bMBD8F50tVxL1sHxrGwQI0DZAkvYSBMKSXNlEKVKhqCSu4X8vZSt+JGpgpG3aiyDtkruzszPQ9dIT3Jt6nJVxnkXJhGRxDmEQsIwzztISAThhuTfyFFToTlKtvws1K4zWlYvegWy78HL50SBY5EU4Zq0xqOxq5fJcNLWExbf+mIuwuZDc5b3p9c3Iq8G4uhaNN10+SdlFjYUEitJdvMASXYahq3As4se7H3rIFxvIw4N03VzU7PXRhne4wpGHDxYVR9e3BNngyKtAcbDaLLypNa0LuOH5uZKL7Ym5UHYzcAUPjfjhipNotFd/6j0UYZyGJIuKubYoiyeI2FwLhue1FVptKlmg8piLWraV+rIZs9sBltBKu7eDtsGCY93N1KHsIZeXc32/JfpUqPX4fVJqBnL7BdYaQVuLTbe3Vlw9Z28T/DSwP5RYub5FBXXdwa6NvhPrXg56NZ5J9zEupb53GBsxU2NgHQdjxziMT138ZB3+BkZ0hHx2ZdzlruNXJW5bPOv0kWcB4CQJ/aSEwI9JTn0ICPMZ0gzzchJzmnmr9UKK27YbbUNVT0qx4dwdaJgRtX3vINxhP/9q1NuGxmXMfylCEg2rrWgs2LbZc0/03CnRq61ypizO1oQci3HIKMXlI8gXJ+htI7Y9e9NEf8o0cXBomheN8U/Fv+PgUPq7fbyJ8IMccp5NqF/GNPHjMJv4NHNvGcknMQGIEkp/X/jBS6LKcSebYcEHzwW/bvBq0V85Qb077UscC3H7cxnS+6DOnQkkgtrpnPynOn9ksw+fDHP9t6ywo+nQCgdbehM38JBQEtLUTwnhfpymqU9z92BBlAQIWZAkr/8N3PwERvXOdT8JAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:06</sys_created_on>
+        <sys_id>102893e983749a100c7dcdc6feaad356</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:06</sys_updated_on>
+        <ui_id>54b20bfc-2b16-4f32-9640-94a85869da72</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">e5af22e983385a100c7dcdc6feaad3ce</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>87eaf2e4-046d-4f58-a819-600ec22bbb5a</parent_ui_id>
+        <subflow display_value="HBS: Change Booking Room Status and Send Email to guest.">14f4972583749a100c7dcdc6feaad3c7</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/81V207cMBD9lzxvtkmcy2bf2iIkpLZIQHlBKBrbk12rjh0SB9iu9t9rb8JeYEsRbWlfomTGnjlz5hzlaukJ7k09zso4z6JkQrI4hzAIWMYZZ2mJAJyw3Bt5Ciq0J6nW34SaFY3WlY3eguxceLn82CAY5EU4Zl3ToDKrlc1z0dYSFpfDMRthcyG5zXvTq+uRV0Nj6xpsvOnyUcosaiwkUJT24hmWaDMMbYWXIn64+2GAfNZDPjyI62ajzU4f3XCHKxx5eG9QcbR9S5AtjrwKFAejm4U3NU1nA3Z4fqrkYnNiLpTpB67gvhXfbXESjXbqT737IozTkGRRMdcGZfEIEZtrwfC0NkKrvpIBKl9yUcuuUl/6Md0OsIROmp0ddC0WHGs3k0M5QC7P5/puQ/SxUOvxh6TUDOTmC4xpBO0Mtm5vnbh4yl4f/HRgfyixsn2LCurawa4bfSvWvSz0ajyT9mNcSn1nMbZipsbAHAdjyziMj238aB2+hEY4Qj7bMvay6/hViZsOT5w+8iwAnCShn5QQ+DHJqQ8BYT5DmmFeTmJOM2+1Xkhx07nReqoGUoqec3ugZY2ozXsL4RaH+VejwTY0LmP+UxGS6LDaitaA6dod95CnTiGvtsqJMjhbE/JSjIeMUpw/gHx2gsE2YtNzME30p0wTB/umedYY/1T8Ww72pb/dx5sIP8gh59mE+mVMEz8Os4lPM/uWkXwSE4AoofT3hR88J6oct7I5LPjwqeCdJF6t+Qt7+d2xg7iR/a8Rbv4th+R+UObWAxJBbWVO/lOZlwMVQ/hon+qH7N9ywpamfSfsbelNzMBDQklIUz8lhPtxmqY+ze2DBVESIGRBkrz+L3D9A2yM7Ko+CQAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:06</sys_created_on>
+        <sys_id>5c2893e983749a100c7dcdc6feaad37e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:06</sys_updated_on>
+        <ui_id>63fb61d4-4ab6-46a3-ab39-ed670a487c91</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">e5af22e983385a100c7dcdc6feaad3ce</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>109386f1-235c-4854-8113-2038f780f054</parent_ui_id>
+        <subflow display_value="HBS: Change Booking Room Status and Send Email to guest.">14f4972583749a100c7dcdc6feaad3c7</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/81Vy27bMBD8F50tVxL1sHxrGwQI0DZAkvYSBMKSXNlEKVKhqCSu4X8vZSt+JGpgpG3aiyDtkruzszPQ9dIT3Jt6nJVxnkXJhGRxDmEQsIwzztISAThhuTfyFFToTlKtvws1K4zWlYvegWy78HL50SBY5EU4Zq0xqOxq5fJcNLWExbf+mIuwuZDc5b3p9c3Iq8G4uhaNN10+SdlFjYUEitJdvMASXYahq3As4se7H3rIFxvIw4N03VzU7PXRhne4wpGHDxYVR9e3BNngyKtAcbDaLLypNa0LuOH5uZKL7Ym5UHYzcAUPjfjhipNotFd/6j0UYZyGJIuKubYoiyeI2FwLhue1FVptKlmg8piLWraV+rIZs9sBltBKu7eDtsGCY93N1KHsIZeXc32/JfpUqPX4fVJqBnL7BdYaQVuLTbe3Vlw9Z28T/DSwP5RYub5FBXXdwa6NvhPrXg56NZ5J9zEupb53GBsxU2NgHQdjxziMT138ZB3+BkZ0hHx2ZdzlruNXJW5bPOv0kWcB4CQJ/aSEwI9JTn0ICPMZ0gzzchJzmnmr9UKK27YbbUNVT0qx4dwdaJgRtX3vINxhP/9q1NuGxmXMfylCEg2rrWgs2LbZc0/03CnRq61ypizO1oQci3HIKMXlI8gXJ+htI7Y9e9NEf8o0cXBomheN8U/Fv+PgUPq7fbyJ8IMccp5NqF/GNPHjMJv4NHNvGcknMQGIEkp/X/jBS6LKcSebYcEHzwW/bvBq0V85Qb077UscC3H7cxnS+6DOnQkkgtrpnPynOn9ksw+fDHP9t6ywo+nQCgdbehM38JBQEtLUTwnhfpymqU9z92BBlAQIWZAkr/8N3PwERvXOdT8JAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:06</sys_created_on>
+        <sys_id>dc2893e983749a100c7dcdc6feaad380</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:06</sys_updated_on>
+        <ui_id>01183c44-e800-4e25-8917-9b46a81ca873</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e5af22e983385a100c7dcdc6feaad3ce^sys_idNOT IN14fec3ad83b09a100c7dcdc6feaad300,18fe83ad83b09a100c7dcdc6feaad3fe,6140dba583f09a100c7dcdc6feaad33d,6d40dba583f09a100c7dcdc6feaad33e,d42893e983749a100c7dcdc6feaad380"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">54fe83ad83b09a100c7dcdc6feaad3ff</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">e5af22e983385a100c7dcdc6feaad3ce</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>f41964c8-c634-4d86-b8f4-531e0b2cb13c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:20:58</sys_created_on>
+        <sys_id>14fec3ad83b09a100c7dcdc6feaad300</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:12</sys_updated_on>
+        <ui_id>3f8ebc65-247f-4e73-8e61-47568e3ff747</ui_id>
+        <values>H4sIAAAAAAAA/+VU22obMRD9FaPnZdlLbJq8hZRAoG2gCXlpwzIrzdoiWmmrix3X+N872osTWpuGtm/10+rMaM45o4N3zATfBe/uzaVzcqnZxZfHhEkdMfreMQ0tsgvGjRbSS6OrHkjYGlSIhZtmBq0J2s+WFsGjnfkV6Fme0Y/ahHSdgu3D27r5SiphcVTRgSUuamIXu59KftthpaBGRUPvvJV6SdeloFOTQZOf85yXxaIssqx4d5bXi7LOC1ECQkl908WrydTsQ48kJ91GPsLdxGSsiLLyLGH47FELJOoGlMOEtaAFeGO3B4SsilutXoCV1J7Gsdj87OR3ml3M57GxQfLIcSjylZEcb7uoZEA81GoqGhVa/WkQHDeNDQTlp00TEhxWAruoLtKN3M3dymw+T0TXUvdOxqIyHNThBJ781sGjiy+AClsaVLXQdbSFqrNmLfvLpKVNl4oOaaPMhkhjlFLgUXhKy4D0mvD3PfwAVkYXH2kMXR5k1uAkr/rY0ThvycK+X0f1LURBg8HRSjVsgxoct7Lzl8SzxlH1Pvk1s6/iuttd9cETVZ7yYGkHPq2NeYqGpDh8DiHd77+GLCvxRJj/ata/iPo5zJt5ns2PR/1scSzqR0J+Ot/Fb/IdH+qN8SbX/2m+pauGnI7eevI/jvdjzPLA4IaACOTSkZD7iN1M/9yxsKWXlvw1tDH2KVp4wfY/AIVzuLUDBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9cfe83ad83b09a100c7dcdc6feaad3fc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">e5af22e983385a100c7dcdc6feaad3ce</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:20:58</sys_created_on>
+        <sys_id>18fe83ad83b09a100c7dcdc6feaad3fe</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:12</sys_updated_on>
+        <ui_id>f41964c8-c634-4d86-b8f4-531e0b2cb13c</ui_id>
+        <values>H4sIAAAAAAAA/+VUy27bMBD8FUNnQdAjNhrfghQBArQNkAS5tIGwJlf2ohSpkpQd1fC/d6lHEiROWwS99SbOLndmlgPtI9P6pvXu1pw5R2sdLb/exxHpgPH3PtJQY7SMhNGSPBld9kAcbUG1oXBZza6NqWfkZrAFUrBSoSzJNQq6u993iQ0paXFkbcDybI82Wu5flHzXYMm3UPGwG29Jr/k6ST5VKVTZqchEkS+KPE3zDyfZalGsslwWgFBw33TxfDIx+9Qj8ZvuAh/jbmIyVgZZWRpH+OBRS2TqCpTDOKpBS/DGdo+IRZBXWj0BG9Kex0Wh+cHRT56dz+ehsUL2KHAoio0hgVdNUDIgvl/UUDSqrfWXQXDYMFbQKj9tmJHWYSmxCeoC3chd3WzM7noiuiDdOxmLyghQjyfw7HfVenThBVBhzYPKGpqGt1A21mypv8xa6mSt+JBUyuyYNEQnARGEJ7wMSC4Y/9jDd2ApuPjMY/jyIHMFjkTZx4zHecsWDv06yh9tEDQYHK2Uwza4wQlLjT9jni2Oqg/x64w+i+d+f86v4VGWWSJayzvwieUkliSTMYmkyHeHw7c2TQvZS3kV33dO+RfxPoV5Nc/S+fF4nyyOxftIsN/OdP6HTAcvfxnpNE3/00yTK4dsjt568ndH+j7kd2BwQ0AkCnIs5DZgl9PfORQ6fmkSz6Gdsd+DhSfs8AtYi7B65wUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e540dba583f09a100c7dcdc6feaad33b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">e5af22e983385a100c7dcdc6feaad3ce</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>3f8ebc65-247f-4e73-8e61-47568e3ff747</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:26:46</sys_created_on>
+        <sys_id>6140dba583f09a100c7dcdc6feaad33d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:12</sys_updated_on>
+        <ui_id>cb48f40b-2168-42f3-8a98-be9f812348c8</ui_id>
+        <values>H4sIAAAAAAAA/+VUTW/bMAz9K4HPjuGPOEhyKzYUKLCtwFr0shUGLdGJUFlyJTlpFuS/j/JHW3QJVgy97WY9UuR75JMPgW5d0zp7qy+sFWsVrH7ch4FQHqPvQ6CgxmAVMK24cEKrogPCYAuy9YGralJq/SDUemLwsUXrJsJOoGmM3iKnRC5sI2F/9958thGSGxyYNGCon0MTrA5vQm7fYCGhREllb5yhknRdcDpVMVTJkiUsS+dZGsfpYpaU86xMUp4BQkZ548VPo7DJlw4Jzyr2/Qi3YydtuKeVxGGATw4VJ/qrCqTFMKhBcXDa7J8Rg8CvlXwBNkI5Khf45CcrflHtNM99YoWkkWEfZBstGF43nkmPOCjlGNSyrdW3nrCfNVbQSjfOmpDWYsGx8ex8u6F3dbPRu+9jo0uhOiVDUGoG8vkEjvSWrUPrN4ASaypU1LQwmkLhtya6y8SljtaSDlEl9Y6aejtFwDzxiIYB0SXhnzv4DozwKr5SGbrc0yzBClZ01qNyzpCEYzeO4rH1hHqBg5SinwYlWGZE4y6ozxYH1sfwT9++suzhkJSLPE8Qpykusuksi/PpMqmSabVIUsYhTSgW9Z4EWVgHDo/Hn20cZ/y8sz+q7Ec8gCXkVZ7E+ekHMJufegAnrH/e9elfXO/X907Tx3H8n7pe2KJ376Cta/7Ppr/3Du872N4gHJmwROTWY1fjP90H9rRpwV5DO20evIQX7PgbXQC1Xx0GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e540dba583f09a100c7dcdc6feaad33d</block>
+        <comment/>
+        <connected_to>cb48f40b-2168-42f3-8a98-be9f812348c8</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">e5af22e983385a100c7dcdc6feaad3ce</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>3f8ebc65-247f-4e73-8e61-47568e3ff747</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:26:46</sys_created_on>
+        <sys_id>6d40dba583f09a100c7dcdc6feaad33e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:12</sys_updated_on>
+        <ui_id>87eaf2e4-046d-4f58-a819-600ec22bbb5a</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">142893e983749a100c7dcdc6feaad37f</block>
+        <comment/>
+        <connected_to>3f8ebc65-247f-4e73-8e61-47568e3ff747</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">e5af22e983385a100c7dcdc6feaad3ce</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>f41964c8-c634-4d86-b8f4-531e0b2cb13c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:06</sys_created_on>
+        <sys_id>d42893e983749a100c7dcdc6feaad380</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:12</sys_updated_on>
+        <ui_id>109386f1-235c-4854-8113-2038f780f054</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e5af22e983385a100c7dcdc6feaad3ce"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e5af22e983385a100c7dcdc6feaad3ce"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e5af22e983385a100c7dcdc6feaad3ce^sys_idNOT IN1cfecfe983b09a100c7dcdc6feaad33d,98fe83ad83b09a100c7dcdc6feaad3f7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e5af22e983385a100c7dcdc6feaad3ce</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:20:57</sys_created_on>
+        <sys_id>1cfecfe983b09a100c7dcdc6feaad33d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:20:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e5af22e983385a100c7dcdc6feaad3ce</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:20:57</sys_created_on>
+        <sys_id>98fe83ad83b09a100c7dcdc6feaad3f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:20:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e5af22e983385a100c7dcdc6feaad3ce"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e5af22e983385a100c7dcdc6feaad3ce"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e5af22e983385a100c7dcdc6feaad3ce"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>hbs__create_booking</internal_name>
+        <label_cache>[{"name":"2acf61a3-8d34-4417-ae70-ca003924d9d2.record","label":"3 - Update Record➛x_1461372_hotel_booking_room Record","reference":"x_1461372_hotel_booking_room","reference_display":"Booking_Room","type":"reference","base_type":"reference","usedInstances":{"1b8551ee-2e83-4305-91f1-f812cda211ee":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Booking_Room Record","reference":"x_1461372_hotel_booking_room","reference_display":"Booking_Room","type":"reference","base_type":"reference","usedInstances":{"2acf61a3-8d34-4417-ae70-ca003924d9d2":["record"],"54b20bfc-2b16-4f32-9640-94a85869da72":["booking_room"],"63fb61d4-4ab6-46a3-ab39-ed670a487c91":["booking_room"],"01183c44-e800-4e25-8917-9b46a81ca873":["booking_room"]},"attributes":{}},{"name":"Created_1.current.booking_id.booking_amount","label":"Trigger - Record Created➛Booking_Room Record➛Booking➛Booking amount","reference":"","reference_display":"Booking amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1461372_hotel_booking","column_name":"booking_amount","usedInstances":{"3f8ebc65-247f-4e73-8e61-47568e3ff747":["condition"]}},{"name":"Created_1.current.room_id.availability","label":"Trigger - Record Created➛Booking_Room Record➛Room➛Availability","reference":"","reference_display":"Availability","type":"boolean","base_type":"boolean","parent_table_name":"x_1461372_hotel_room","column_name":"availability","usedInstances":{"f41964c8-c634-4d86-b8f4-531e0b2cb13c":["condition"]}},{"name":"{{static.6a0f0fad83b09a100c7dcdc6feaad349}}","label":"Hotel Booking Approvals","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"1b8551ee-2e83-4305-91f1-f812cda211ee":["approval_conditions"]}},{"name":"1b8551ee-2e83-4305-91f1-f812cda211ee.approval_state","label":"4 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"cb48f40b-2168-42f3-8a98-be9f812348c8":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>HBS:  Create Booking.</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="HBS:  Create Booking.">e5af22e983385a100c7dcdc6feaad3ce</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c62857e983749a100c7dcdc6feaad32a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:13</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=c62857e983749a100c7dcdc6feaad32a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c62857e983749a100c7dcdc6feaad32a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c62857e983749a100c7dcdc6feaad32a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c62857e983749a100c7dcdc6feaad32a^sys_idNOT IN0e2857e983749a100c7dcdc6feaad32b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c62857e983749a100c7dcdc6feaad32a</id>
+        <name>HBS:  Create Booking.</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:13</sys_created_on>
+        <sys_id>0e2857e983749a100c7dcdc6feaad32b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=0e2857e983749a100c7dcdc6feaad32b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c62857e983749a100c7dcdc6feaad32a^sys_idNOT IN022857e983749a100c7dcdc6feaad32d,122857e983749a100c7dcdc6feaad349"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="HBS:  Create Booking.">c62857e983749a100c7dcdc6feaad32a</model>
+        <model_id>c62857e983749a100c7dcdc6feaad32a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c62857e983749a100c7dcdc6feaad32a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:13</sys_created_on>
+        <sys_id>022857e983749a100c7dcdc6feaad32d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=022857e983749a100c7dcdc6feaad32d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="HBS:  Create Booking.">c62857e983749a100c7dcdc6feaad32a</model>
+        <model_id>c62857e983749a100c7dcdc6feaad32a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c62857e983749a100c7dcdc6feaad32a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:14</sys_created_on>
+        <sys_id>122857e983749a100c7dcdc6feaad349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=122857e983749a100c7dcdc6feaad349"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=c62857e983749a100c7dcdc6feaad32a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c62857e983749a100c7dcdc6feaad32a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=c62857e983749a100c7dcdc6feaad32a^sys_idNOT INd22857e983749a100c7dcdc6feaad3aa"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">c62857e983749a100c7dcdc6feaad32a</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:14</sys_created_on>
+        <sys_id>d22857e983749a100c7dcdc6feaad3aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:14</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VZXW/bNhT9K4KeNiAD9GFbVt7aJMUCdM3meNtDkBGURNpCadKTKCVekf++S4uyZVlKZDvZ7PSlgEnq8p7Dc88l07tvJsMBYea5OcYBI+aZGXNJEo7ZeDEnMCzVMOJ4puZmmEdYimRhnsskI2emSCKSmOf2mZljlpHbRXodwUewdPmF/tzU0/D7Edm9ge16DpoKSRgKhPga8wlKhJjBsihO5wwv/tCrP+rZUTE7xwlElWrHb2Y4jVmUEG6e391D1mrbkIbYd4gVurbrOJblDHt2MHAD24lcTCwLQtTR1tKUDaDXGMmjJDwisBXFLCUNfCQERzecLVYrpkBnQcgMP6bxPxB9aKl1lEDuISnmwqmIQ3Izl7HgxUiRUDEpWDbjX4pEFUeE4ozJkiMYyVKCIjJXuand9Nb0dioeRuVGn2K+hKEnmQgxW/3CUiZxkEmSKmZpzIBjVJCQiixZpjm6urgZXaI/P4wvfr4aodHV7Xh0fTG+ujSflnjQ35mKWGSoc0EFnKfVwX6KCVMnpY4bwZmdmWmYxHP5IZRxTnQ+T2drVSYZhyBoxfyWPgvqVhx+jlNg4A5AlPwsQ8I8/axDjjJuCDgj+McIswTYkUZ5/vR6hieaVfprKbclK1opOU4QmqF0kaJpFiDgbTIBsmI+zyTy/KFvD3CLAL1wg5tlSUDoO9O8f1LHRRgJZUVd9Pe0+uuXOE2hGCokrTAq8W1DXKEDlRolgwXU9LSw3m+Uml5U1qVltbrPtnrymipqhtPBZGyb0oBQx/IUattyA2pbntXHNHItK3QqJrO9fWtesqbmKrjnbEePdPGdXpvvpMuCYR3Ko85emWW1YjtpL98Uro7jqIPW9nZxhKnVbNrdyadXiiuGLzeF9xy0V7Z3HOUYvohKjF3su4NLP0wJRymRUtXt7jbNoR6W3+Bik4qbKWEbiiAqEuOL4D9dr9cZtwScAvI8KT+rencX0BAsMd4V6kDIab1jKaQfYXwDqSrSljP/jppYrbjyTRb3aGKkN+z71A09wAxti/ZIgO2e08e+N3CpX2tite3bEzueNtbRNPJW+2lqIF2LMm+s7VUrqbWkfXRfU4AO7b7QQL9fUg5q3WWZtXbufZI9ja5OmXgADezR0AMcfp0kIuPRls9DTCPmxnqF8YPm9sfTsvRqRwMNkOfxbq44HZSHNK61fsrixHyxV8tyqR34pEcseG650LKCvu8HIXYo9QYecexay1pv3JjN8TSqDhWRN5VU2wOnUW15k0h3eHX9/wkeZOBac43+XcwdvxtfCB7FsmildS8up1Jzz1INK8HLo/jr6rftQi0GX6rVwQDjiLS5U0ArtVqF1ZCMbED4JrVqvfVfZYs/EO+tqJmICLtchzM3+oGi5QFzmSIpEI4iVCGsowQLbDu89QFfctCDX21MkKDVfnkpDJgwYBMjpobGSCIjWBhySsAzGLgHbGio3U/sAVi9LWwjX12j3zXuwm23nv0wvER2WsAOftHXSujQKxKJPNzvu17zq96vX5GaUnghw+O5Nu1sFHmT7zz7nt0tbj1m44u2ovPNw+74gH/HqN/sgteQxfHf9jYLkKnuudViJyyOSDn3CkakI+Vrw9ndgujQD/u212JBw36rBenNn0tMNsD+T+6CqtNo5RzX/9S/lvDu/wWNc83LCCIAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=c62857e983749a100c7dcdc6feaad32a^sys_idNOT IN122857e983749a100c7dcdc6feaad3a8,1e2857e983749a100c7dcdc6feaad3a9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">c62857e983749a100c7dcdc6feaad32a</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>3f8ebc65-247f-4e73-8e61-47568e3ff747</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:14</sys_created_on>
+        <sys_id>122857e983749a100c7dcdc6feaad3a8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:14</sys_updated_on>
+        <ui_id>2acf61a3-8d34-4417-ae70-ca003924d9d2</ui_id>
+        <values>H4sIAAAAAAAA/+VVXW+bMBT9K5GfEYKQZm3eqkSRJnWt1E556Spk8CWxZjCzTZosyn/fNRiCkq1Npb5E4833y+dczoHnHeGMTMgIWBDehOM0CqNoGATD61GYjKMkHLKIAoTEIwXNASsVpFIxPK+pqGxgt5sqoAZYHPpppRQUZr/HPOO6FHS7cGUYSVdcMMyTyfOLR0qqcKIBRSa7o9S5kARNQGDpY4vpGKPZlvbMZFrliCvmbfDOdc5cZvB1hhlssnDCwCOwMVAwQCAZFRo8ktOCUSPVlkyMqjCApNlDIbZdxYoXpiGa043mv/HmUWDrMkBmqVtCd/xOEwGzZklNKptRQ59wemoq1e1M8hR0sxcGGa2EmfZjTcFDabgsmhZjB7tuKaq8uG+2QroBvXdSaYgZlJarRd9Qy55W8vWxBTrnRb0WR1PIlIruRI1RPKmMhbMjIKDec07LkhfLuFRyzetmhJL7S4EHPxPyFe/UfFn4NLW4fdws9ecYn9XhBVXckviGY7B57xG91VNBtT5QwT3GvyqLpCHmKMT1FuoVxLUabHOqeGlu8ao1OOB7zwk/uXpLZenNQVS9mQfxb+JwNA6jL8N4JQ2IOJHypyWupMxPPfBO9cf8cQby1h+11P7BxFnkJHbX7x3cNwlnkKtPM8j1pRnEUbl4h7zni2D45te3p6baCrrnCW2oqfSPKggiNjo1wXH6Y6o/A1er+jkHwfRfgLaShxxxGYgb4Eeyd8nBwiW7f8OnaT8cB/VzYQ74b34RL38AGS0v/R0JAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">c62857e983749a100c7dcdc6feaad32a</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>3f8ebc65-247f-4e73-8e61-47568e3ff747</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:14</sys_created_on>
+        <sys_id>1e2857e983749a100c7dcdc6feaad3a9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:14</sys_updated_on>
+        <ui_id>1b8551ee-2e83-4305-91f1-f812cda211ee</ui_id>
+        <values>H4sIAAAAAAAA/+1XTW/bOBD9KwHPjle2HH/dghopdrHbAk3QSxwIY5KK2aVJrUil8Qr+7x2KlKzaqeO0vgTpcYYzwzej90jxtiSCkSkZjdM+n0z60aIXRXEUjS9oNI75Ih4NRzHQiHSIghXHyJxTnTO0H0AWzlGWfaDpsAfx+ZjFg/PBoDc6Bz6KzilgrUl/wCas3/V5mw1mMmEyCevPoQB66FJIlnNFprd3HZJBjntZnpNpubN0LFgJCy4x9FONdhe9XWfOZpoWK65sImrn3yFzFlbO/pzhCiY5OFGH8EfLFeOIIwVpeIesQDGwOl+Tqc0LdOQc2Ecl103EUijr+1zBoxH/48Zx38WlHBujYQaNeQMLyWd+Rn4pnYGFa6xObZE3I9OCcuPHwngKhbTv2j4f8DGzQiufYl3hkK1lsVIf/FBIU6D1SQrDE8Yz16tD71tLr5f666ca6JVQ1VRCm1JTkI0F1uZiUVgHpyRc8mrMK8gyoe6TLNcPokpGKKvuvUSjm0r9Ffc04l51gTrcXZwsdK/QP6vcnyEXrol/sAwmbzrErM07CcZsW8E5Jv8VDolvLLSQVFPwI3B5NBeZvcRdHnjAvOkEMSzoQX7RLZ18ua0WHpPeYNiLR/1kqS2XyULrf127udarfeI/E/0yURwBuhbFTUC900SQRGUm1dr3iqjSzj74hSCI3mFBBM9WEZ5GTwhiHL0yQYTWXr0inhND1DvEKzbe8ggRYA8gk1Rw2b4hjAVbmH3+N/6XMf0IRDXTLwOks6sA6UdQA/cr8ynuV/k73O+/kPs/vg3GUfTa6P+W7gN6kHA83vLqiy5y9YQCTvDTcwSImvV/eRS7pN8F9zOcj39z/m1wfnBxkG6t34fmLKVaMeEQmxbz/QnMzaVav78tS3fkC9odQpRGKZ7V8SKaAO5AR4wyOkw5AL4hJpvN3b5kfqXUy7R2RPPNA6OQ3Dw3jKC0ZjEPSW21NVdVXTEobnCqJ8crFNxb+ceiB/mWTrb8YgUOCGz7zVHOiYc9J9M5UVrxOenMiYtKHMEqN0YguGah8pXlZuM9RQ6hQK9lbrMZrE0VaeiSM+Rn5f3Ok1SCCP5TPPKPmEmtwVnBz2Z+KPtjCtprcPq5iL3b7joEVJX+uBHtW+/iZLfe4LcETyFBhCmS+jh1VxqegifU5d03vueOKBcTAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c62857e983749a100c7dcdc6feaad32a^sys_idNOT IN522857e983749a100c7dcdc6feaad3ab,922857e983749a100c7dcdc6feaad3ac,9a2857e983749a100c7dcdc6feaad3ab"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">c62857e983749a100c7dcdc6feaad32a</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>cb48f40b-2168-42f3-8a98-be9f812348c8</parent_ui_id>
+        <subflow display_value="HBS: Change Booking Room Status and Send Email to guest.">14f4972583749a100c7dcdc6feaad3c7</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+WVSW/bMBCF/wvPkqvNluVbG8NAgLYBkrSXIBCG5MgmSi2hqCSu4f9e0lK8xMoGJLn0YtiPy7x5ww++WhHByYRwlkVJHAzHYRwl4HseiznjbJQhAA9ZQhxSQI5mJy3LP6KYp6osc6PegmysvFqdKASNPPUHrFEKC71em3Uu6krC8ne3zShsISQ362Ryde2QCpS5V6Mik9Wjpdcak0BRmq3fOmfnrbN+v3pZWVVhhqYQw0763t1xvqeXiltbvkPwXmPB0fjJQNbokBwKDrpUSzLRqjGC6Z2fFXK53bEQhW77zeG+Fn9N0TBw9upOyH3qRyM/jIN0UWqU6SOn262XQCVO2xyP28ymoOHCuGC6UduIS8GwbmPkmEEj9cm+1m44q7Qoi/aItkVeNsVK2eTFzzZasr18b7xNjSnHyuZlE+jiyC4W5d023JkoNtF2i7JkIPe2Iii2mAmU9gHYwql5Cg4BrZWgjbZNrEgjLo9H2Yp9w0SJuTGU5lBVtp9KlbdiY8L0lA/m0vwYZLK8M+ZrMS8GwGw4AzNmGMyMPt3Iv0EJm9QPc405bCv+KsRNg6fWaxJ7gOOh7w4z8NwoTKgLXshchjTGJBtHnMZk7ZB6WZ9IqOtdjqaJ9KaxKbSpdvml7XjsEaZEpb8aU7fYRbV2OnhplEX8SUbCoB+GtNagm3qP4eCY1+DNwL7CTB+w6cWDm2etdvgauHC+yX8f3tOt2qEbvBe6kXeI7jN4vj+Sn4PdE3Ttkj5ka5f1p5DlJZDweEzdLKJDN/LjsUtj8y0Ok3EUAgRDSj+CLO+5x5zg7rn2E+UdE7Up8HaqXjbyQFUvTb0UGcQkQvGIoktDxZdZ57IDKfxPQHoYTidP+0f3Uazt5nHI2sFEPgU37oc09OnIHYUhd6PRaOTSxHwwLxh6CLE3HL7nH9n1P5HC6C+HCgAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:14</sys_created_on>
+        <sys_id>522857e983749a100c7dcdc6feaad3ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:14</sys_updated_on>
+        <ui_id>54b20bfc-2b16-4f32-9640-94a85869da72</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">c62857e983749a100c7dcdc6feaad32a</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>109386f1-235c-4854-8113-2038f780f054</parent_ui_id>
+        <subflow display_value="HBS: Change Booking Room Status and Send Email to guest.">14f4972583749a100c7dcdc6feaad3c7</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+WVSW/bMBCF/wvPkqvNluVbG8NAgLYBkrSXIBCG5MgmSi2hqCSu4f9e0lK8xMoGJLn0YtiPy7x5ww++WhHByYRwlkVJHAzHYRwl4HseiznjbJQhAA9ZQhxSQI5mJy3LP6KYp6osc6PegmysvFqdKASNPPUHrFEKC71em3Uu6krC8ne3zShsISQ362Ryde2QCpS5V6Mik9Wjpdcak0BRmq3fOmfnrbN+v3pZWVVhhqYQw0763t1xvqeXiltbvkPwXmPB0fjJQNbokBwKDrpUSzLRqjGC6Z2fFXK53bEQhW77zeG+Fn9N0TBw9upOyH3qRyM/jIN0UWqU6SOn262XQCVO2xyP28ymoOHCuGC6UduIS8GwbmPkmEEj9cm+1m44q7Qoi/aItkVeNsVK2eTFzzZasr18b7xNjSnHyuZlE+jiyC4W5d023JkoNtF2i7JkIPe2Iii2mAmU9gHYwql5Cg4BrZWgjbZNrEgjLo9H2Yp9w0SJuTGU5lBVtp9KlbdiY8L0lA/m0vwYZLK8M+ZrMS8GwGw4AzNmGMyMPt3Iv0EJm9QPc405bCv+KsRNg6fWaxJ7gOOh7w4z8NwoTKgLXshchjTGJBtHnMZk7ZB6WZ9IqOtdjqaJ9KaxKbSpdvml7XjsEaZEpb8aU7fYRbV2OnhplEX8SUbCoB+GtNagm3qP4eCY1+DNwL7CTB+w6cWDm2etdvgauHC+yX8f3tOt2qEbvBe6kXeI7jN4vj+Sn4PdE3Ttkj5ka5f1p5DlJZDweEzdLKJDN/LjsUtj8y0Ok3EUAgRDSj+CLO+5x5zg7rn2E+UdE7Up8HaqXjbyQFUvTb0UGcQkQvGIoktDxZdZ57IDKfxPQHoYTidP+0f3Uazt5nHI2sFEPgU37oc09OnIHYUhd6PRaOTSxHwwLxh6CLE3HL7nH9n1P5HC6C+HCgAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:14</sys_created_on>
+        <sys_id>922857e983749a100c7dcdc6feaad3ac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:14</sys_updated_on>
+        <ui_id>01183c44-e800-4e25-8917-9b46a81ca873</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">c62857e983749a100c7dcdc6feaad32a</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>87eaf2e4-046d-4f58-a819-600ec22bbb5a</parent_ui_id>
+        <subflow display_value="HBS: Change Booking Room Status and Send Email to guest.">14f4972583749a100c7dcdc6feaad3c7</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+WVXW/aMBSG/4uvE5bgQAh3WxFSpW2V2m43VRUd2ydgzfmo47RliP8+m6R8FPoltb3ZDYLXx/Z73uNHXC2JFGRMBM+iJO4PRjSOEgiDgMeCCz7MEEBQnhCPFJCjrWRl+UcWs1SXZW7VW1CNk5fLE41gUKRhjzdaY2FWK7suZF0pWPzuyqzC51IJu07GV9ceqUDbcw1qMl4+WnqtMQUMlS391jk7b50d92sWlVM1Zmgv4thJ37szznf0UgtnK/QI3hssBFo/GagaPZJDIcCUekHGRjdWsL2Ls0ItNhVzWZi23xzua/nXXkr73s69Y3KfhtEwpHE/nZcGVfrI6ab0EpjCSZvjYZvZBAxcWBfcNHoTcSk51m2MAjNolDnZ1dqCs8rIsmi3GHfJy6Z4qZq8+NlGSzaH74y3qTEVWLm8XAJdHNnFvLzbhDuVxTrablGVHNROKYLm86lE5R6Auzi1T8EjYIyWrDGuiSVp5OXhKFvx2DBRYW4NpTlUleun0uWtXJuwPeW9mbI/epkq76z5Ws6KHnAXTs+OGXpTq0/W8m/Q0iX1wx5jN7sbfxXypsFT5zWJA8DRIPQHGQR+RBPmQ0C5z5HFmGSjSLCYrDxSL+oTBXW9zdE2kd40LoU21S6/tB2P28K1rMxXa+oWu6hWXgcvi7JIPMkI7R+HIa0NmKbeYZge8krfDOwrzBwDNr14cPOs1Q5fCxfO1vnvwnu6UTt0+++FbhTso/sMnu+P5Odg9wRd26T32dpm/SlkBQkkIh4xP4vYwI/CeOSz2H6LaTKKKEB/wNhHkBU895gT3D7X40SFh0S5R/d2qF728QDVUZiOQmQJUwjFI4gurb8vU5fCliP6n3CUdW138mR/cg+rH4Xadh77qO1N5FNoEyFlNGRDf0ip8KPhcOizxH7woD8IEOJgMHjP/7Hrf5KJHJOGCgAA</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:14</sys_created_on>
+        <sys_id>9a2857e983749a100c7dcdc6feaad3ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:14</sys_updated_on>
+        <ui_id>63fb61d4-4ab6-46a3-ab39-ed670a487c91</ui_id>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c62857e983749a100c7dcdc6feaad32a^sys_idNOT IN1e2857e983749a100c7dcdc6feaad393,922857e983749a100c7dcdc6feaad3a4,d22857e983749a100c7dcdc6feaad3a7,d62857e983749a100c7dcdc6feaad3a5,de2857e983749a100c7dcdc6feaad395"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9cfe83ad83b09a100c7dcdc6feaad3fc</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">c62857e983749a100c7dcdc6feaad32a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:14</sys_created_on>
+        <sys_id>1e2857e983749a100c7dcdc6feaad393</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:14</sys_updated_on>
+        <ui_id>f41964c8-c634-4d86-b8f4-531e0b2cb13c</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQdAjNhrfAhsBAqQNkAS5tIGwJimbKEWqfNhxBf97l6L8QOM+UuTYmzlL7s6MduCOaO9a7+yjvrJWLBWZfn5OiFABw98dUdBwMiVUKyac0KrqgYSsQfpQuKlH91o3I2FHsAYhYSFDmQnbStg+/f4WXQnJDB+mtmCwt+OGTLufSoJhkzqDOr+kOS2LSVlkWfHhIl9MykVesBI4lNgQG3OJV2d7uqPbHkl+qcNt24BbZ4RaDufbocvDHtSGBVZ5lhD+4rhiHPnUIC1PSAOKgdNme0AMB3an5BFYCeWwHQmXX6z4jgOL8ThcrDlKpDwWD8fHYM88OhhL9RwcIB1PnTfDdbrSgnIbDWK8Bi/d7BSLF+7aIDc+cb3v8bWWvlGfoivk0GD/wRDxlleMt0FtoD9oqR9WenO/Z3otVO/MUJSagjycwKF/C+8Cn45wyRtsVDXQtuhq1Rq9Fv1j5NKkS4mHtJZ6g0PDJqZAA/EUzYX0GvF5Dz+BEUHFR2yDjyPNBVhBq35rsR3axMkuIXZrZxKsPYpEh6tvPlCMkgdxVfQnPKFGtO4KJ6/5oGOXvA7Byf533Qy/t+OsylPqDbriUoOrXgmWDqsupHDb3e6Lz7KS9eRe5eMfu7wtP5cwrsd5Nj6fn4vJufycSc4bQ1P8ITRByl9mJsuy/6F5l9AIW8VVH7T1w98xM88hIHHmwWsqLFLrP9PN/v8lFLa4YIKeQhttvgZRR2z3A6kWdFapBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e540dba583f09a100c7dcdc6feaad33b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">c62857e983749a100c7dcdc6feaad32a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>3f8ebc65-247f-4e73-8e61-47568e3ff747</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:14</sys_created_on>
+        <sys_id>922857e983749a100c7dcdc6feaad3a4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:14</sys_updated_on>
+        <ui_id>cb48f40b-2168-42f3-8a98-be9f812348c8</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy2rjMBT9laC1E/yoS5pdaSkUOlOYlm5mirmWrhNRxXIlOWkm5N/nynIedFKmhSxnZ537OudKB6+Zbl3TOvuoL62V05pNfj5HTNYeo+81q2GObMK4roV0UtdFB0RsAar1gdtqUGr9IuvpwOBri9YNpB1A0xi9QEGJQtpGwerps/l8JpUw2DNpwNA8h4ZN1u9CUlC7KoYqueAJz9LzLI3jdHyWlOdZmaQiA4SMGiooUVHq1VbC4K5Dog+1uVXjcesM0ezPd32Xhy2ojfCskjhi+OawFsR+UoGyGLE51AKcNqsdYhDEfa32wEzWjtoxn/xm5W8amOa5T6yQJHIMwd3xEUqF12GXIVRdgwOi03LXmj6dz7TkaMOCBFbQKnd1iIWE+8bLDSXON+6rtWrn9fewFbZrsL06QlqLhcDGq/X0ey3Vw0wvf2yZ3si620wfVJqD2p3A0f7K1nk+a4YK59SomNP901YL/whkV0xc5qOposOoUnpJQ/3rHAH3xEe0XBjdEH7dwU9gpFfxjdpQcaBZgpW86F4ytaM1IdtEzK7slQJr9yJpw8Vr6ykGyb24IuzHl3AjG3dJkxfY69hEfxvjwBPrdVKO8zxBHKY4zoZnWZwPL5IqGVbjJOUC0oRio/DoQRXWgcPN5lcbx5n42Dqnavs1h11AXuVJnB932Nn5MYcd8dYXbZX+w1b+Pj/pqjiO/9vqJLaStghm6LV1w0/oqmdvoTBzt2suLVHrrul2+1fygRU9MMkPoaU2L17UHtv8AQDmo7TfBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">142893e983749a100c7dcdc6feaad37f</block>
+        <comment/>
+        <connected_to>3f8ebc65-247f-4e73-8e61-47568e3ff747</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">c62857e983749a100c7dcdc6feaad32a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>f41964c8-c634-4d86-b8f4-531e0b2cb13c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:14</sys_created_on>
+        <sys_id>d22857e983749a100c7dcdc6feaad3a7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:14</sys_updated_on>
+        <ui_id>109386f1-235c-4854-8113-2038f780f054</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e540dba583f09a100c7dcdc6feaad33d</block>
+        <comment/>
+        <connected_to>cb48f40b-2168-42f3-8a98-be9f812348c8</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">c62857e983749a100c7dcdc6feaad32a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>3f8ebc65-247f-4e73-8e61-47568e3ff747</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:14</sys_created_on>
+        <sys_id>d62857e983749a100c7dcdc6feaad3a5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:14</sys_updated_on>
+        <ui_id>87eaf2e4-046d-4f58-a819-600ec22bbb5a</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">54fe83ad83b09a100c7dcdc6feaad3ff</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="HBS:  Create Booking.">c62857e983749a100c7dcdc6feaad32a</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id>f41964c8-c634-4d86-b8f4-531e0b2cb13c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:14</sys_created_on>
+        <sys_id>de2857e983749a100c7dcdc6feaad395</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:14</sys_updated_on>
+        <ui_id>3f8ebc65-247f-4e73-8e61-47568e3ff747</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HPxvijCWveSkKh0K2wlr5sxVxLciIqS54+kmYh/31XlvPBlrKW9XF5so6u7j3nSIdsifau884+6CtrxUKR6benhAgVMPzeEgUtJ1NCtWLCCa2qHkjICqQPGzfNCFrtlRstDAfHzcgtQY3yDH9YxoTtJGwe31ZNl0IywwcWHRichUVkuv1tSzBs1mTQ5Jc0p2UxKYssKz5d5PWkrPOClcChxIYSai6xdLanP7rtkeRVXW7TBdw6I9RiWN8OXe73oDYssMqzhPAXxxXjyKcBaXlCWlAMnDabA4JK2Z2SR2AplMN2JBS/WPETBxbjcShsOEqkPG4elg9QSz6PTsatZg4OkI6nzpuhnC61oNxGgxhvwEs3O8ViwV0X5MYjLjQeTmvpW/UlukIODfYXh4i3vGK8C2oD/UFLc7/U6697ptdC9c4Mm1JTkIcVOPSv9i7w2RIueYuNqha6Dl2tOqNXoj+MXNp0IXGRNlKvcWh4mSnQQDxFcyG9Rnzew49gRFDxGdvg4UizBito1b9ibIc2cbJLiN3YmQRrjyLR4eqHDxSj5EFcFf0JR6gRnbvCySs+6Nglf4biJA/b7ax/2azKU+oNuuLSWuvnIFGww2dMwW733WdZyV9Jyz/1el+WLmHcjPNsfD5LF5NzWTqToncGqPhLgMLNvTE/KPp/gD4kQMJW8dkP2vrhH5ifpxCWOPPgNRUWqfXXdLP/7wkbG3xggp5Ca22eg6gjtvsFHfM48MUGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c62857e983749a100c7dcdc6feaad32a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c62857e983749a100c7dcdc6feaad32a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c62857e983749a100c7dcdc6feaad32a^sys_idNOT IN5e2857e983749a100c7dcdc6feaad38c,de2857e983749a100c7dcdc6feaad345"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c62857e983749a100c7dcdc6feaad32a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:14</sys_created_on>
+        <sys_id>5e2857e983749a100c7dcdc6feaad38c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c62857e983749a100c7dcdc6feaad32a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:14</sys_created_on>
+        <sys_id>de2857e983749a100c7dcdc6feaad345</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c62857e983749a100c7dcdc6feaad32a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c62857e983749a100c7dcdc6feaad32a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c62857e983749a100c7dcdc6feaad32a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>e5af22e983385a100c7dcdc6feaad3ce</sys_id>
+        <latest_snapshot>c62857e983749a100c7dcdc6feaad32a</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e5af22e983385a100c7dcdc6feaad3ce^sys_idNOT INe62897e983749a100c7dcdc6feaad302"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>e5af22e983385a100c7dcdc6feaad3ce</plan_id>
+        <snapshot>c62857e983749a100c7dcdc6feaad32a</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 15:01:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e62897e983749a100c7dcdc6feaad302</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 15:01:15</sys_updated_on>
+        <trigger display_value="">aa2897e983749a100c7dcdc6feaad300</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e5af22e983385a100c7dcdc6feaad3ce"/>
+</record_update>

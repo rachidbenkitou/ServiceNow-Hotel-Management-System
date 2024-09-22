@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1711000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>test</internal_name>
+        <label_cache>[{"name":"{{static.62826bf03710200044e0bfc8bcbe5df1}}","label":"Abel Tuter","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"c8f3090a-67b8-481d-aec3-b969dabe08c1":["approval_conditions"]}},{"name":"Created or Updated_1.current.approval","label":"Trigger - Record Created or Updated➛Booking Record➛Approval","reference":"","reference_display":"Approval","type":"choice","base_type":"choice","parent_table_name":"x_1461372_hotel_booking","column_name":"approval","choices":[{"image":"","used":false,"label":"Approve","reference":false,"selected":false,"missing":false,"rawLabel":"Approve","value":"1","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Reject","value":"2","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Approve or Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Approve or Reject","value":"3","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}}],"usedInstances":{"c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345":["condition"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Booking Record","reference":"x_1461372_hotel_booking","reference_display":"Booking","type":"reference","base_type":"reference","usedInstances":{"c8f3090a-67b8-481d-aec3-b969dabe08c1":["record"],"b5103d9f-df4c-4ca1-9eea-6151bec59272":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.booking_amount","label":"Trigger - Record Created or Updated➛Booking Record➛Booking amount","reference":"","reference_display":"Booking amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1461372_hotel_booking","column_name":"booking_amount","usedInstances":{"fa14631a-677d-4d0c-9902-0541d984de1f":["condition"]}},{"name":"Created_1.current.approval","label":"Trigger - Record Created➛Booking Record➛Approval","reference":"","reference_display":"Approval","type":"choice","base_type":"choice","parent_table_name":"x_1461372_hotel_booking","column_name":"approval","choices":[{"image":"","used":false,"label":"Approve","reference":false,"selected":false,"missing":false,"rawLabel":"Approve","value":"1","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Reject","value":"2","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Approve or Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Approve or Reject","value":"3","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}}],"usedInstances":{"c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345":["condition"]}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Booking Table","reference":"x_1461372_hotel_booking","reference_display":"Booking","type":"table_name","base_type":"table_name","usedInstances":{"4afd6691-9651-4fed-94d1-b8e5e02d1d33":["table_name"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Booking Record","reference":"x_1461372_hotel_booking","reference_display":"Booking","type":"reference","base_type":"reference","usedInstances":{"c8f3090a-67b8-481d-aec3-b969dabe08c1":["record"],"b5103d9f-df4c-4ca1-9eea-6151bec59272":["record"]},"attributes":{}},{"name":"Created_1.current.booking_amount","label":"Trigger - Record Created➛Booking Record➛Booking amount","reference":"","reference_display":"Booking amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1461372_hotel_booking","column_name":"booking_amount","usedInstances":{"fa14631a-677d-4d0c-9902-0541d984de1f":["condition"]}}]</label_cache>
+        <master_snapshot>f255a62d83745a100c7dcdc6feaad322</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Test</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>9f55e62d83745a100c7dcdc6feaad301</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 10:50:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>78de1e2d83f05a100c7dcdc6feaad3b4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name>sys_hub_flow_78de1e2d83f05a100c7dcdc6feaad3b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:18</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=78de1e2d83f05a100c7dcdc6feaad3b4"/>
+    <sys_variable_value action="DELETE" query="document_key=78de1e2d83f05a100c7dcdc6feaad3b4"/>
+    <sys_flow_record_trigger action="DELETE">
+        <active>true</active>
+        <condition table="x_1461372_hotel_booking">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9f55e62d83745a100c7dcdc6feaad301</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:18</sys_updated_on>
+        <table>x_1461372_hotel_booking</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="DELETE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>78de1e2d83f05a100c7dcdc6feaad3b4</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:18</sys_created_on>
+        <sys_id>9b55e62d83745a100c7dcdc6feaad302</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:18</sys_updated_on>
+        <trigger display_value="">9f55e62d83745a100c7dcdc6feaad301</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="DELETE" query="identifier=78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT IN9b55e62d83745a100c7dcdc6feaad302"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=78de1e2d83f05a100c7dcdc6feaad3b4"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT IN3cde1e2d83f05a100c7dcdc6feaad3b6"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>78de1e2d83f05a100c7dcdc6feaad3b4</id>
+        <name>Test</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 10:50:44</sys_created_on>
+        <sys_id>3cde1e2d83f05a100c7dcdc6feaad3b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 10:50:44</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=3cde1e2d83f05a100c7dcdc6feaad3b6"/>
+    <sys_hub_flow_input action="DELETE" query="model=78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT IN5fd4266983745a100c7dcdc6feaad334,63d4266983745a100c7dcdc6feaad365,dfd4266983745a100c7dcdc6feaad339"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Test">78de1e2d83f05a100c7dcdc6feaad3b4</model>
+        <model_id>78de1e2d83f05a100c7dcdc6feaad3b4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:17:07</sys_created_on>
+        <sys_id>5fd4266983745a100c7dcdc6feaad334</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:17:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=5fd4266983745a100c7dcdc6feaad334"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Test">78de1e2d83f05a100c7dcdc6feaad3b4</model>
+        <model_id>78de1e2d83f05a100c7dcdc6feaad3b4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:17:07</sys_created_on>
+        <sys_id>63d4266983745a100c7dcdc6feaad365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:17:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=63d4266983745a100c7dcdc6feaad365"/>
+    <sys_complex_object action="DELETE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">ee9284bef8f2021008dd9cfea425ac2d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Test">78de1e2d83f05a100c7dcdc6feaad3b4</model>
+        <model_id>78de1e2d83f05a100c7dcdc6feaad3b4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:17:07</sys_created_on>
+        <sys_id>dfd4266983745a100c7dcdc6feaad339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:17:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=dfd4266983745a100c7dcdc6feaad339"/>
+    <sys_hub_flow_output action="DELETE" query="model=78de1e2d83f05a100c7dcdc6feaad3b4"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=78de1e2d83f05a100c7dcdc6feaad3b4"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT IN6fd4266983745a100c7dcdc6feaad36b"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Test">78de1e2d83f05a100c7dcdc6feaad3b4</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:17:08</sys_created_on>
+        <sys_id>6fd4266983745a100c7dcdc6feaad36b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:18:23</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT INa7d4266983745a100c7dcdc6feaad37d,e3d4266983745a100c7dcdc6feaad36f"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Test">78de1e2d83f05a100c7dcdc6feaad3b4</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:17:08</sys_created_on>
+        <sys_id>a7d4266983745a100c7dcdc6feaad37d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:17:08</sys_updated_on>
+        <ui_id>b5103d9f-df4c-4ca1-9eea-6151bec59272</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnwRAtv29FDQM9NAHSNpc4JShyHROlRJWiHLuG/71LSnKcpEkNIz0EKE/ich8zu0PxZkeUJFPSBxnTCR2KhCZJL4574z5Nh0lKezLhAJREJOcZoKcFYazE/Zrryht2u48WuAPZMbbzrZD+k9GuqKyF3O336CpVWWi+vW4i0CJWSks8J9Ob24gU3GJyB5ZMd0+O3LYApnkKGgNnRlQZJu18mmGOU4G30Vct8qdMfA3cyyY7U96IRx4PjSMCGwe5BCy35LqEiGQ8R5rGbsnU2QoN2AB5mevtwWOlclczzfimVL8wfz/2fktAauLQBaMEXBZOmby2OJ7q9tDoKssvaqy+ibDklXZHTaxKYBIKj81Xq6Esv6zM/VVbZ67yQKOBpY3g+rDjzlmVVg5K33fQENhnvChUfscKa9YqBCOUrHuncdNdanOPNUt1l3e58Li72AnenaN9FszX3CpP4jOmweB9IM1+Vr5uTaMBzALnQJiFiaBrKawq3AdMvIYG5j5qJJoOXpu0mDwM9ijng0w3jPaHNBn12Mo40Cw15gfSfK7Olx3PE+1Xj6ZzUaM5lcmj4BeYNbJ9ZGtUO3gz1Y7/tWqb0u9Mtn8Ta9x79bd0NNKgz/JIqAXfBkKl464q8We0qOI4kbtFK9QFmS7IDNeCRIs6LJh6fDJIkgEdJ6N4MqRxLEZSSDFcAucySUbBvdyGlKf577834mc8M1XuaiSTej2/Oe8I+ZlXGTKk4aBTM45OnnWbYK5Ay/IPw2/vclOArZsCh1fozS40HcZh/X+MznmMbn8DphMgujEJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Test">78de1e2d83f05a100c7dcdc6feaad3b4</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>fa14631a-677d-4d0c-9902-0541d984de1f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:17:08</sys_created_on>
+        <sys_id>e3d4266983745a100c7dcdc6feaad36f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:09</sys_updated_on>
+        <ui_id>c8f3090a-67b8-481d-aec3-b969dabe08c1</ui_id>
+        <values>H4sIAAAAAAAA/+1XbU/bMBD+K1U+V11eWlr6Da2qtEkbEm9fKIoc50K9uXbmOEBX5b/vnDhpKRAqVtDG9i0+38tzd8/Z8eXKYbEzdoajxIfDQ9+NPNcNXHc0oO4ogCgYHgwDQl2n6wiyANRUQKWKcX1DeG4Eq9VHBURD3JGqc57G5jP0ejRXCoQuClSNWZZysrywFiihc8Zj3HfGl1ddJyUKnWtQzni1taWXKYScRMDRcCJpvkCnnU8T9LEr8Nr6pEa+nYmJgevYeg+ZEeKWweN2HbjTIGLAaAnhGXSdBRGYpVRLZ6xVjgLMPz4WfNlozJnQVaILcpexn+g+8I1eApgZbYogGYXjVDMpKokmEa83Jc8X4msF1dQQEpJzvVHDPIMwhtRgM9EqKMnpXN6e1HGmTJRZWFhcUsKbFdFasSjXkJmyA4cy+QVJUyauw1TJG1YaI5RF75rjopdweYsxM3YteoQa3D2sBOlNUT4pxRdEMZPEF3SDxkWZdPgjN3GrNCzgsMy5Shi1MqpYqo/Q5w1YhEXXkjOirT2m65ZW7tbcvAu9/oEXDP1wLjXwMJLyOyb3kJJPK76MqWcGSKfsXnfnJO4ZP0zK0rRchqJybVnqtbPUSnah6ch9ZZra0H8ZT5+jqOu1dTcerbuJ8RAx4WHCgG+eo3s8J6fG9T327YCvNj6yADtTC/Ap4JaP5XKLj/4e+ei+NiPf78FJW7sOwbq532SuxFuTcgd4tfHnCt82J7dht1Ay+E/JP4GS/UFrz+GR84ZKETODL9sgZnVKQXYklueXq1WmiWa0d+CP/IMocYOh5/rYpn4f3Ciho4hGMIgTryiuHjL6d1y9bBSaI/Yk55DV47BDaZpfWWvXWio7DM2mskZ2IPr7+rN9g3l4nz8NtLXhyeG6wXGO5cCH1eaza+ZUIGfOeOYIKWDmdGeO0QpN50sxaiC4ZqOUrVZFUUlyRawDb2O5to7JMis1MzqHGNlTSu9JKkpb+T6feqc2QGeCuD+csY1b4/mqNe/FvLJ/tJB2PJpMqsqxzTtjsLc7o/9vTgjCZGF9AJkrAg+VF4/N1S+hO6QCrRAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=78de1e2d83f05a100c7dcdc6feaad3b4"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT IN23d4266983745a100c7dcdc6feaad37d,ebd4266983745a100c7dcdc6feaad36e"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">abd4266983745a100c7dcdc6feaad36f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Test">78de1e2d83f05a100c7dcdc6feaad3b4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>fa14631a-677d-4d0c-9902-0541d984de1f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:17:08</sys_created_on>
+        <sys_id>23d4266983745a100c7dcdc6feaad37d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:15</sys_updated_on>
+        <ui_id>c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345</ui_id>
+        <values>H4sIAAAAAAAA/+VUXWvcMBD8K4efjfFH7mjuLaQEAm0DTZqXNpi1tL4TlSVXknO5Hvffu2udk9BcaAl965s1K+3M7A7eJXYI/RD8jT3zXq1Msvx6lybKMEbfu8RAh8kyEdZIFZQ19QikyT3ogQuX7Qz63tl7BqXyvYbt7bGaWCstHR4YenDUJ6BLlrvfSmHbY62hQU0troNTZkXPlaRTm0NbnIpCVOWiKvO8fHdSNIuqKUpZAUJF96aH55Pg2YcRSV91wnyE+4nJOsmyijxN8CGgkUjULWiPadKBkRCs2z4iDkFeGf0ErJUJ1C7hyw9e/aTe5XzOF1skjwJjUaytEnjVs5KIBGj0VLR66MynKJjnii0MOkxzJWTwWEvsWR3THbjb67XdfJ6ILpQZnRyK2grQjycI5LcZAnreAGrsqFHd0b5oCjUvTY2PSUuXrTQdslbbDZFyTDIQLDyjYUB2Qfj7Eb4Fp9jFR2pDj6PMBrwS9RgpahccWdiP46h/DCwoGjxYqeM06IIXTvXhjHgoPlH1Pn2Zx2dR3O3OaRsB5cy62Zde8mddZGJwNI6QxSiC3u+/DXleyeJlYN/Q4V/E+hTm7bzI58djfbI4FusjgX49y+UfssxL+cso53n+n2ZZ+Tpm8uBtJH9zlO84t5HBx4BIFMqTkBvGLqc/MBe2tGklnkMb676zhSds/wsYY1D5ywUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">6fd4266983745a100c7dcdc6feaad36c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Test">78de1e2d83f05a100c7dcdc6feaad3b4</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:17:08</sys_created_on>
+        <sys_id>ebd4266983745a100c7dcdc6feaad36e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:15</sys_updated_on>
+        <ui_id>fa14631a-677d-4d0c-9902-0541d984de1f</ui_id>
+        <values>H4sIAAAAAAAA/+VUXWvcMBD8K8bPxsh27mjuLaQEAm0DTZqXNpi1tL4TkSVXku9yNfffu/JHEtILDW3f+mbNrnZmVoP72HS+7by7MWfOybWOV1/vkljqgNF3H2toMF7F3GghvTS6HIAk3oLqQuGyjqAxnfZRJddrtJHfgI4yFjHGqE1I1yrY376tm2+kEhYnFS1Y4vJo41X/ouT3LZYKKlQ09Npbqdd0XQo61Qzq7JRnvMiXRc5Y/u4kq5ZFleWiAISC+uaL57Op6MOAJK+6DXyEu5nJWBFkZSyJ8cGjFkjUNSiHSdyAFuCN3T8iFkFcafUEbKT2NC4OzQ9O/qDZ+WIRGmskjxzHIt8YyfGqDUpGxEOl5qJRXaM/jYLDprGGTvl504R0DkuBbVAX6Cbu+npjdp9nogupBydTURkO6vEEnvxWnUcXXgAVNjSobKBtaQtla81WDpdJS5OuFR3SWpkdkYYopcCD8JSWAekF4e8H+BasDC4+0hi6PMqswEleDrGjcd6ShcOwjvJ7FwSNBicr5bgNanDcytafEc8WJ9WH5NfMPotr35/Ta3gUkbHRl1aEzzJLeWdpHT6tjLkP3saQHg7fOsYKzNjRMP/VrH8R9VNY1IuMLY5H/WR5LOpHQv56vvPf5Ds81BvjTa7/03xLV445nbwN5H8c77uQ5ZHBjQERyKUjITcBu5z/3KGwp5eW/Dm0M/Y+WHjCDj8BkAMI4gMGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=78de1e2d83f05a100c7dcdc6feaad3b4"/>
+    <sys_hub_flow_variable action="DELETE" query="model=78de1e2d83f05a100c7dcdc6feaad3b4"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT IN13d4266983745a100c7dcdc6feaad338,67d4266983745a100c7dcdc6feaad33e,afd4266983745a100c7dcdc6feaad367"/>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:17:07</sys_created_on>
+        <sys_id>13d4266983745a100c7dcdc6feaad338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:17:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:17:07</sys_created_on>
+        <sys_id>67d4266983745a100c7dcdc6feaad33e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:17:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:17:08</sys_created_on>
+        <sys_id>afd4266983745a100c7dcdc6feaad367</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:17:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_78de1e2d83f05a100c7dcdc6feaad3b4"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_78de1e2d83f05a100c7dcdc6feaad3b4"/>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>test</internal_name>
+        <label_cache>[{"name":"{{static.62826bf03710200044e0bfc8bcbe5df1}}","label":"Abel Tuter","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"c8f3090a-67b8-481d-aec3-b969dabe08c1":["approval_conditions"]}},{"name":"Created or Updated_1.current.approval","label":"Trigger - Record Created or Updated➛Booking Record➛Approval","reference":"","reference_display":"Approval","type":"choice","base_type":"choice","parent_table_name":"x_1461372_hotel_booking","column_name":"approval","choices":[{"image":"","used":false,"label":"Approve","reference":false,"selected":false,"missing":false,"rawLabel":"Approve","value":"1","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Reject","value":"2","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Approve or Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Approve or Reject","value":"3","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}}],"usedInstances":{"c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345":["condition"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Booking Record","reference":"x_1461372_hotel_booking","reference_display":"Booking","type":"reference","base_type":"reference","usedInstances":{"c8f3090a-67b8-481d-aec3-b969dabe08c1":["record"],"b5103d9f-df4c-4ca1-9eea-6151bec59272":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.booking_amount","label":"Trigger - Record Created or Updated➛Booking Record➛Booking amount","reference":"","reference_display":"Booking amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1461372_hotel_booking","column_name":"booking_amount","usedInstances":{"fa14631a-677d-4d0c-9902-0541d984de1f":["condition"]}},{"name":"Created_1.current.approval","label":"Trigger - Record Created➛Booking Record➛Approval","reference":"","reference_display":"Approval","type":"choice","base_type":"choice","parent_table_name":"x_1461372_hotel_booking","column_name":"approval","choices":[{"image":"","used":false,"label":"Approve","reference":false,"selected":false,"missing":false,"rawLabel":"Approve","value":"1","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Reject","value":"2","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Approve or Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Approve or Reject","value":"3","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}}],"usedInstances":{"c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345":["condition"]}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Booking Table","reference":"x_1461372_hotel_booking","reference_display":"Booking","type":"table_name","base_type":"table_name","usedInstances":{"4afd6691-9651-4fed-94d1-b8e5e02d1d33":["table_name"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Booking Record","reference":"x_1461372_hotel_booking","reference_display":"Booking","type":"reference","base_type":"reference","usedInstances":{"c8f3090a-67b8-481d-aec3-b969dabe08c1":["record"],"b5103d9f-df4c-4ca1-9eea-6151bec59272":["record"]},"attributes":{}},{"name":"Created_1.current.booking_amount","label":"Trigger - Record Created➛Booking Record➛Booking amount","reference":"","reference_display":"Booking amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1461372_hotel_booking","column_name":"booking_amount","usedInstances":{"fa14631a-677d-4d0c-9902-0541d984de1f":["condition"]}}]</label_cache>
+        <master>true</master>
+        <name>Test</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Test">78de1e2d83f05a100c7dcdc6feaad3b4</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f255a62d83745a100c7dcdc6feaad322</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:16</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=f255a62d83745a100c7dcdc6feaad322"/>
+    <sys_variable_value action="DELETE" query="document_key=f255a62d83745a100c7dcdc6feaad322"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=f255a62d83745a100c7dcdc6feaad322"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=f255a62d83745a100c7dcdc6feaad322^sys_idNOT INbe55a62d83745a100c7dcdc6feaad323"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>f255a62d83745a100c7dcdc6feaad322</id>
+        <name>Test</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:16</sys_created_on>
+        <sys_id>be55a62d83745a100c7dcdc6feaad323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=be55a62d83745a100c7dcdc6feaad323"/>
+    <sys_hub_flow_input action="DELETE" query="model=f255a62d83745a100c7dcdc6feaad322^sys_idNOT IN3655a62d83745a100c7dcdc6feaad331,4355a62d83745a100c7dcdc6feaad372,b255a62d83745a100c7dcdc6feaad344"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Test">f255a62d83745a100c7dcdc6feaad322</model>
+        <model_id>f255a62d83745a100c7dcdc6feaad322</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:16</sys_created_on>
+        <sys_id>3655a62d83745a100c7dcdc6feaad331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=3655a62d83745a100c7dcdc6feaad331"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Test">f255a62d83745a100c7dcdc6feaad322</model>
+        <model_id>f255a62d83745a100c7dcdc6feaad322</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:17</sys_created_on>
+        <sys_id>4355a62d83745a100c7dcdc6feaad372</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=4355a62d83745a100c7dcdc6feaad372"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Test">f255a62d83745a100c7dcdc6feaad322</model>
+        <model_id>f255a62d83745a100c7dcdc6feaad322</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:16</sys_created_on>
+        <sys_id>b255a62d83745a100c7dcdc6feaad344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=b255a62d83745a100c7dcdc6feaad344"/>
+    <sys_hub_flow_output action="DELETE" query="model=f255a62d83745a100c7dcdc6feaad322"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=f255a62d83745a100c7dcdc6feaad322"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=f255a62d83745a100c7dcdc6feaad322^sys_idNOT INcb55a62d83745a100c7dcdc6feaad3ce"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Test">f255a62d83745a100c7dcdc6feaad322</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:17</sys_created_on>
+        <sys_id>cb55a62d83745a100c7dcdc6feaad3ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:17</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=f255a62d83745a100c7dcdc6feaad322^sys_idNOT IN0755a62d83745a100c7dcdc6feaad3cd,0755a62d83745a100c7dcdc6feaad3ce"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Test">f255a62d83745a100c7dcdc6feaad322</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>fa14631a-677d-4d0c-9902-0541d984de1f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:17</sys_created_on>
+        <sys_id>0755a62d83745a100c7dcdc6feaad3cd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:17</sys_updated_on>
+        <ui_id>c8f3090a-67b8-481d-aec3-b969dabe08c1</ui_id>
+        <values>H4sIAAAAAAAA/+1XW0/bMBT+K5Wfqy5peqNviApp0wYSl71QFDm2Q725ceY4QBf1v+84dtLQQilb91DBG+ea7xy+z65vCsQpGqPhKO6yo6OuF/meF3jeqE+8UcCiYDgYBph4qI0SPGeQqRiRioJ9j0VuHEVxohjWjLakal2n1PwZ+h2SK8USvVxCKuVZKvDiu6sAD5lxQSGOxje3bZRiBc01U2hcrIV2RSdwxASkXlTw1uHqRWpsKkk+B1whr5xfXeXERVqfJxCBIgPHayP2qFlCGeCIschYG81xAkNKtUBjrXJwwPj0PBGLOmPGE23nnOPHjP+GDwddkxczGIy4HdTmFY4Em9gd2VA8wRpfQneic1WvTHLCMrsWymKcC33S9NmE81RzmdgSbRq7ainyeXJml4LqBo1/SZ6xkLLUzGrQ29Hiy5l8uKiAnvKk3IobU0iCRW1hrRWPcm3gFIgJVq55jtOUJ3dhquQ9L4sByrxzJ8DoxEI+wDczfpd0MDG4O7BZ3DkF/6R0f8eKmyG+QRsoXrZRtshOBM6y1Siwx/BXbpDYwdwIYbkFuwJTRxRP9TF85Z45zMu2Y39EtvKLrOhk263I/xj6vYEfDLvhTGomwkjKnzDuJudfTnybFHaAWknhymFdg+6EUJphGXuqg7KsdWYDTgb+dhk4z0oHljzPyGDkHZgM3GgHr4PXJOD523hFRyseAQKYAYsw5kw0L4I9HPQ7oKjYfexgtE4djJfgOb6X5nN8L+vX+N59I99fPvdHnndolH9PJz/ZSjgWrHj1Q+Yq+T+s3wFExfovFsU66dfB/Q3ngw/Ovw/O9/pb6db4yVCfpUQmlBvEWYP59gRm2XGyuL4pikxjzUln0B11B1HsBUPf6wIRej3mRTEZRSRifRr7y+XtpmT+pdXbtLbD8PVTIhcse20ZTml1ULmiptrqq6rq6BTX29fj4gAF915+V5GtfIuPVvyiOSwIHs/Np/UUWdhTNJ6iRCZsitpTZLJCQ7DSDRkArg6UvqJYLq0nV9g18BvmqpriRVZmZmTGKPCz9D7xhKUgnH8fz/kddlJpcJKz1sQuZXNNTns1TrsXvnHbXbqEstOnK9689fp7u/V6HxLchwQBJg+r49RcaXAK7lGXt38AIknGJfISAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Test">f255a62d83745a100c7dcdc6feaad322</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:17</sys_created_on>
+        <sys_id>0755a62d83745a100c7dcdc6feaad3ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:17</sys_updated_on>
+        <ui_id>b5103d9f-df4c-4ca1-9eea-6151bec59272</ui_id>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5Wfoypp+kH7NlEhTWIgwcYLhcixb6g1J85sB+iq/vddx05bwWBF4qWan+L75XOufW5u10RwMiND4HEyTcYsTdJ0EMeDk2GSj9M8GfCUAiQkIhUtASM1MKU57h+pbJxhvT7VQC3wntK9HzV3n1nSZ43WUNnNBkO5MLWkq5uQgRa2FJKjn8xu7yJSU43FLWgyW79wHYpO0hwkhl518F7Ctava7bliTYm4MtEZz0PmPHh6X+fowSQHJ4kjAs8WKg4IpKDSQERKWiFLpVdkZnWDBuTPLyu52kYsRWU90ZI+G/EbTx7GLq4AZMZCE7bb7zSXMPdN8q5iTi29xurMNnrbMyUYGN8XDgVtpD3dt/mAy9oKVfkU6wqHbCWbsrrwXSHbAnt30hjIONSOq0PvqRXXS/V01QE9E1XblkBTKkbldket1SJvrIOzJiCh7XNJ61pUD1mt1aNokxFK2X+QuOkXUj3hmUY8VH3KHO4+dpb2z9A+b803VAtH4huWweRNRMzKnEpqzI4K9jH71TgknligkLVdaFuQta/BJTMtavsFj3qEAHwTBQ3ko/deGZvuHtVezZ0OnrNkOE7SySBbKgsyy5X6icRfP/+3Az+migPwdqpoH9gb+IMwXtnO93N7F94RZDH6NFmcHJssApWj18W/1BAP3p25e6+pFYDZU0JNVy1FY6ltDE7aRRPHKV8vOiUsyGxB5rgWJFr4tNY0oNNRmo6Sk3QST8dJHLMJZ5yNC6CUp+mkDUeeruRh8Zv7oK6MlqqprEcy9eu1NI8I+cdmxQG32c2KMwGSm79cbzcooMROWMj8db8YFsHZuwnO7X/00yZGMo7bdWRz47/5nd79AYjnhlpUCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=f255a62d83745a100c7dcdc6feaad322"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=f255a62d83745a100c7dcdc6feaad322^sys_idNOT IN4755a62d83745a100c7dcdc6feaad3cc,cb55a62d83745a100c7dcdc6feaad3c9"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">abd4266983745a100c7dcdc6feaad36f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Test">f255a62d83745a100c7dcdc6feaad322</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>fa14631a-677d-4d0c-9902-0541d984de1f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:17</sys_created_on>
+        <sys_id>4755a62d83745a100c7dcdc6feaad3cc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:17</sys_updated_on>
+        <ui_id>c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnQdAjNprcAhsBAqQN0KS5tIGwIimbKEWqfMRxBf97l6L8QOKiTZFjb+Isd3d2uAP1RHvXeWfv9aW1YqnIxdfHhAgVMPzuiYKWkwtCtWLCCa2qAUjIE0gfAtfNBLrO6KcAMmE7CZuHUzG6EpIZPnbowGAdxw256F+EBMPUJoMmP6c5LYtZWWRZ8eEsr2dlnResBA4lFpRQc4lX5ztqk5sBSX7L2W26gFtnhFqO55uxyt0O1IYFVnmWEP7suGIc+TQgLU9IC4qB02azRwwHdqvkAVgJ5bAcCZefrfiJDYvpNFxsOI5IeQzuj/dQS76IusVQswAHSMdT5814na60oNxGgRhvwEs3P8bihdsujBtTXCg8ZmvpW/UpqkL2BXbPhIi3vGK8C9MG+uMszd1Krz/vmF4JNSgzBqWmIPcncKhf7V3g0xMueYuFqhafH1Wtwg6IIRm5tOlS4iFtpF5j07B1KdBAPEVxIb1CfDHAD2BEmOIjlsHkSLMGK2g1bCiWQ5k42SbEbuxcgrWHIVHh6ocPFOPI43BV1CekUCM6d4mdcT/jHNvk9cIf7Xrfz/G9HWcTbSZfOhY+qzyl3qBALo27DnK7/eazrGT5a0f8Q4W3+eYcps00z6anfXM2O+WbE455o1mKP5glvNJfeiXLsv9meRezCFvFFR9nG5q/o1cegzFiz73WVFikNjzT9e4fEgIbXDBBj6G1Nt/DUAds+wsiQgq6jQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">6fd4266983745a100c7dcdc6feaad36c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Test">f255a62d83745a100c7dcdc6feaad322</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:17</sys_created_on>
+        <sys_id>cb55a62d83745a100c7dcdc6feaad3c9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:17</sys_updated_on>
+        <ui_id>fa14631a-677d-4d0c-9902-0541d984de1f</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0bPxthxE9a8lYRCoVth7fqyFXMtyYmoLHn6SJqF/PddWc4HW8Za1se9WUdX955zpIO3RHvXeWcf9JW1YqHI9OtTSoQKGH5viYKWkymhWjHhhFZVD6RkBdKHjZsmgVZ75ZJaLBbcJG4JKinyJM9zLGPCdhI2j6+rpkshmeEDiw4MznLckOn2ly3BsFmTQ1Nc0oKWo0k5yvPRh4uinpR1MWIlcCixoYSaSyyd7ekntz2S/lGX23QBt84ItRjWt0OX+z2oDQusijwl/MVxxTjyaUBanpIWFAOnzeaAGA7sTskjsBTKYTsSil+s+IEDR+NxKGw4SqQ8bh6WD1BLPo9Oxq1mDg6QjqfOm6GcLrWg3EaDGG/ASzc7xWLBXRfkxiMuNB5Oa+lb9Sm6Qg4N9heHiLe8YrwLagP9QUtzv9Trz3um10L1zgybUlOQhxU49K/2LvDZEi55i42qFroOXa06o1eiP4xc2mwhcZE1Uq9xaHiZGdBAPENzIbtGfN7Dj2BEUPER2+DhSLMGK2jVv2JshzZxskuJ3diZBGuPItHh6rsPFKPkQVwV/QlHqBGdu8LJKz7o2KW/h+IkD9vtDO/bcZZok3zpWPisiox6gwa5rNb6OaiNKdjtvvk8L3mRn03LP/V6W5YuYdyMi3x8PksXk3NZOpOiNwZo9JcAhZt7ZX5Q9P8AvUuAhK3isx+09cPfMT9PISxx5sFrKixS66/pZv/vCRsbfGCCnkJrbZ6DqCO2+wkocmkbxQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=f255a62d83745a100c7dcdc6feaad322"/>
+    <sys_hub_flow_variable action="DELETE" query="model=f255a62d83745a100c7dcdc6feaad322"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322^sys_idNOT IN4b55a62d83745a100c7dcdc6feaad36e,7a55a62d83745a100c7dcdc6feaad340,8355a62d83745a100c7dcdc6feaad377"/>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:16</sys_created_on>
+        <sys_id>4b55a62d83745a100c7dcdc6feaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:16</sys_created_on>
+        <sys_id>7a55a62d83745a100c7dcdc6feaad340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:17</sys_created_on>
+        <sys_id>8355a62d83745a100c7dcdc6feaad377</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_f255a62d83745a100c7dcdc6feaad322"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_f255a62d83745a100c7dcdc6feaad322"/>
+    <sys_hub_flow action="DELETE">
+        <sys_id>78de1e2d83f05a100c7dcdc6feaad3b4</sys_id>
+        <latest_snapshot>f255a62d83745a100c7dcdc6feaad322</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT INd355e62d83745a100c7dcdc6feaad329"/>
+    <sys_flow_trigger_plan action="DELETE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan/>
+        <plan_id>78de1e2d83f05a100c7dcdc6feaad3b4</plan_id>
+        <snapshot>f255a62d83745a100c7dcdc6feaad322</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d355e62d83745a100c7dcdc6feaad329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:18</sys_updated_on>
+        <trigger display_value="">9f55e62d83745a100c7dcdc6feaad301</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=78de1e2d83f05a100c7dcdc6feaad3b4"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</application>
+        <file_path/>
+        <instance_id>526a6f1fdb19021837d72a591396196f</instance_id>
+        <instance_name>dev257540</instance_name>
+        <name>sys_hub_flow_78de1e2d83f05a100c7dcdc6feaad3b4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1711000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;26000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source/&gt;&lt;internal_name&gt;test&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{static.62826bf03710200044e0bfc8bcbe5df1}}","label":"Abel Tuter","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"c8f3090a-67b8-481d-aec3-b969dabe08c1":["approval_conditions"]}},{"name":"Created or Updated_1.current.approval","label":"Trigger - Record Created or Updated➛Booking Record➛Approval","reference":"","reference_display":"Approval","type":"choice","base_type":"choice","parent_table_name":"x_1461372_hotel_booking","column_name":"approval","choices":[{"image":"","used":false,"label":"Approve","reference":false,"selected":false,"missing":false,"rawLabel":"Approve","value":"1","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Reject","value":"2","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Approve or Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Approve or Reject","value":"3","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}}],"usedInstances":{"c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345":["condition"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Booking Record","reference":"x_1461372_hotel_booking","reference_display":"Booking","type":"reference","base_type":"reference","usedInstances":{"c8f3090a-67b8-481d-aec3-b969dabe08c1":["record"],"b5103d9f-df4c-4ca1-9eea-6151bec59272":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.booking_amount","label":"Trigger - Record Created or Updated➛Booking Record➛Booking amount","reference":"","reference_display":"Booking amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1461372_hotel_booking","column_name":"booking_amount","usedInstances":{"fa14631a-677d-4d0c-9902-0541d984de1f":["condition"]}},{"name":"Created_1.current.approval","label":"Trigger - Record Created➛Booking Record➛Approval","reference":"","reference_display":"Approval","type":"choice","base_type":"choice","parent_table_name":"x_1461372_hotel_booking","column_name":"approval","choices":[{"image":"","used":false,"label":"Approve","reference":false,"selected":false,"missing":false,"rawLabel":"Approve","value":"1","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Reject","value":"2","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Approve or Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Approve or Reject","value":"3","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}}],"usedInstances":{"c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345":["condition"]}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Booking Table","reference":"x_1461372_hotel_booking","reference_display":"Booking","type":"table_name","base_type":"table_name","usedInstances":{"4afd6691-9651-4fed-94d1-b8e5e02d1d33":["table_name"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Booking Record","reference":"x_1461372_hotel_booking","reference_display":"Booking","type":"reference","base_type":"reference","usedInstances":{"c8f3090a-67b8-481d-aec3-b969dabe08c1":["record"],"b5103d9f-df4c-4ca1-9eea-6151bec59272":["record"]},"attributes":{}},{"name":"Created_1.current.booking_amount","label":"Trigger - Record Created➛Booking Record➛Booking amount","reference":"","reference_display":"Booking amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1461372_hotel_booking","column_name":"booking_amount","usedInstances":{"fa14631a-677d-4d0c-9902-0541d984de1f":["condition"]}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;f255a62d83745a100c7dcdc6feaad322&lt;/master_snapshot&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Test&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id&gt;9f55e62d83745a100c7dcdc6feaad301&lt;/remote_trigger_id&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;published&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 10:50:44&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Test&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Hotel Booking System" source="x_1461372_hotel"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_78de1e2d83f05a100c7dcdc6feaad3b4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:18&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=78de1e2d83f05a100c7dcdc6feaad3b4"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=78de1e2d83f05a100c7dcdc6feaad3b4"/&gt;&lt;sys_flow_record_trigger action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;condition table="x_1461372_hotel_booking"&gt;^EQ&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;name/&gt;&lt;on_delete&gt;false&lt;/on_delete&gt;&lt;on_insert&gt;true&lt;/on_insert&gt;&lt;on_update&gt;true&lt;/on_update&gt;&lt;run_flow_in&gt;background&lt;/run_flow_in&gt;&lt;run_on_extended&gt;false&lt;/run_on_extended&gt;&lt;run_when_setting&gt;both&lt;/run_when_setting&gt;&lt;run_when_user_list/&gt;&lt;run_when_user_setting&gt;any&lt;/run_when_user_setting&gt;&lt;sys_class_name&gt;sys_flow_record_trigger&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:18&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;9f55e62d83745a100c7dcdc6feaad301&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:18&lt;/sys_updated_on&gt;&lt;table&gt;x_1461372_hotel_booking&lt;/table&gt;&lt;/sys_flow_record_trigger&gt;&lt;sys_trigger_runner_mapping action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;data&gt;{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}&lt;/data&gt;&lt;identifier&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/identifier&gt;&lt;runner&gt;FDTriggerRunner&lt;/runner&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:18&lt;/sys_created_on&gt;&lt;sys_id&gt;9b55e62d83745a100c7dcdc6feaad302&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:18&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;9f55e62d83745a100c7dcdc6feaad301&lt;/trigger&gt;&lt;/sys_trigger_runner_mapping&gt;&lt;sys_trigger_runner_mapping action="delete_multiple" query="identifier=78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT IN9b55e62d83745a100c7dcdc6feaad302"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=78de1e2d83f05a100c7dcdc6feaad3b4"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT IN3cde1e2d83f05a100c7dcdc6feaad3b6"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/id&gt;&lt;name&gt;Test&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 10:50:44&lt;/sys_created_on&gt;&lt;sys_id&gt;3cde1e2d83f05a100c7dcdc6feaad3b6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 10:50:44&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3cde1e2d83f05a100c7dcdc6feaad3b6"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT IN5fd4266983745a100c7dcdc6feaad334,63d4266983745a100c7dcdc6feaad365,dfd4266983745a100c7dcdc6feaad339"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Test"&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/model&gt;&lt;model_id&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:17:07&lt;/sys_created_on&gt;&lt;sys_id&gt;5fd4266983745a100c7dcdc6feaad334&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:17:07&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5fd4266983745a100c7dcdc6feaad334"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Test"&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/model&gt;&lt;model_id&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:17:07&lt;/sys_created_on&gt;&lt;sys_id&gt;63d4266983745a100c7dcdc6feaad365&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:17:07&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=63d4266983745a100c7dcdc6feaad365"/&gt;&lt;sys_complex_object action="INSERT_OR_UPDATE"&gt;&lt;label/&gt;&lt;name&gt;FDCollection&lt;/name&gt;&lt;namespace&gt;FlowDesigner&lt;/namespace&gt;&lt;scope_name&gt;global&lt;/scope_name&gt;&lt;serialized_content&gt;{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}&lt;/serialized_content&gt;&lt;sys_class_name&gt;sys_complex_object&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-06-13 23:19:20&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path/&gt;&lt;sys_id&gt;f4f014150f023300ecf0cc52ff767eed&lt;/sys_id&gt;&lt;sys_mod_count&gt;101&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model"&gt;ee9284bef8f2021008dd9cfea425ac2d&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-09-28 05:06:11&lt;/sys_updated_on&gt;&lt;type&gt;complex_object_collection&lt;/type&gt;&lt;/sys_complex_object&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="Test"&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/model&gt;&lt;model_id&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:17:07&lt;/sys_created_on&gt;&lt;sys_id&gt;dfd4266983745a100c7dcdc6feaad339&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:17:07&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dfd4266983745a100c7dcdc6feaad339"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=78de1e2d83f05a100c7dcdc6feaad3b4"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=78de1e2d83f05a100c7dcdc6feaad3b4"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT IN6fd4266983745a100c7dcdc6feaad36b"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Test"&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/flow&gt;&lt;name&gt;Created or Updated&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:17:08&lt;/sys_created_on&gt;&lt;sys_id&gt;6fd4266983745a100c7dcdc6feaad36b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:18:23&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created or Updated"&gt;a45d9180c32222002841b63b12d3aea7&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;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&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create_or_update&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT INa7d4266983745a100c7dcdc6feaad37d,e3d4266983745a100c7dcdc6feaad36f"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Test"&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;4&lt;/order&gt;&lt;parent_ui_id&gt;c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:17:08&lt;/sys_created_on&gt;&lt;sys_id&gt;a7d4266983745a100c7dcdc6feaad37d&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:17:08&lt;/sys_updated_on&gt;&lt;ui_id&gt;b5103d9f-df4c-4ca1-9eea-6151bec59272&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1Vy27bMBD8FYNnwRAtv29FDQM9NAHSNpc4JShyHROlRJWiHLuG/71LSnKcpEkNIz0EKE/ich8zu0PxZkeUJFPSBxnTCR2KhCZJL4574z5Nh0lKezLhAJREJOcZoKcFYazE/Zrryht2u48WuAPZMbbzrZD+k9GuqKyF3O336CpVWWi+vW4i0CJWSks8J9Ob24gU3GJyB5ZMd0+O3LYApnkKGgNnRlQZJu18mmGOU4G30Vct8qdMfA3cyyY7U96IRx4PjSMCGwe5BCy35LqEiGQ8R5rGbsnU2QoN2AB5mevtwWOlclczzfimVL8wfz/2fktAauLQBaMEXBZOmby2OJ7q9tDoKssvaqy+ibDklXZHTaxKYBIKj81Xq6Esv6zM/VVbZ67yQKOBpY3g+rDjzlmVVg5K33fQENhnvChUfscKa9YqBCOUrHuncdNdanOPNUt1l3e58Li72AnenaN9FszX3CpP4jOmweB9IM1+Vr5uTaMBzALnQJiFiaBrKawq3AdMvIYG5j5qJJoOXpu0mDwM9ijng0w3jPaHNBn12Mo40Cw15gfSfK7Olx3PE+1Xj6ZzUaM5lcmj4BeYNbJ9ZGtUO3gz1Y7/tWqb0u9Mtn8Ta9x79bd0NNKgz/JIqAXfBkKl464q8We0qOI4kbtFK9QFmS7IDNeCRIs6LJh6fDJIkgEdJ6N4MqRxLEZSSDFcAucySUbBvdyGlKf577834mc8M1XuaiSTej2/Oe8I+ZlXGTKk4aBTM45OnnWbYK5Ay/IPw2/vclOArZsCh1fozS40HcZh/X+MznmMbn8DphMgujEJAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Ask For Approval"&gt;f8f2e9920b10030085c083eb37673abd&lt;/action_type&gt;&lt;action_type_parent display_value="Ask For Approval"&gt;bae0a1120b10030085c083eb37673a92&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Test"&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id&gt;fa14631a-677d-4d0c-9902-0541d984de1f&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:17:08&lt;/sys_created_on&gt;&lt;sys_id&gt;e3d4266983745a100c7dcdc6feaad36f&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:09&lt;/sys_updated_on&gt;&lt;ui_id&gt;c8f3090a-67b8-481d-aec3-b969dabe08c1&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1XbU/bMBD+K1U+V11eWlr6Da2qtEkbEm9fKIoc50K9uXbmOEBX5b/vnDhpKRAqVtDG9i0+38tzd8/Z8eXKYbEzdoajxIfDQ9+NPNcNXHc0oO4ogCgYHgwDQl2n6wiyANRUQKWKcX1DeG4Eq9VHBURD3JGqc57G5jP0ejRXCoQuClSNWZZysrywFiihc8Zj3HfGl1ddJyUKnWtQzni1taWXKYScRMDRcCJpvkCnnU8T9LEr8Nr6pEa+nYmJgevYeg+ZEeKWweN2HbjTIGLAaAnhGXSdBRGYpVRLZ6xVjgLMPz4WfNlozJnQVaILcpexn+g+8I1eApgZbYogGYXjVDMpKokmEa83Jc8X4msF1dQQEpJzvVHDPIMwhtRgM9EqKMnpXN6e1HGmTJRZWFhcUsKbFdFasSjXkJmyA4cy+QVJUyauw1TJG1YaI5RF75rjopdweYsxM3YteoQa3D2sBOlNUT4pxRdEMZPEF3SDxkWZdPgjN3GrNCzgsMy5Shi1MqpYqo/Q5w1YhEXXkjOirT2m65ZW7tbcvAu9/oEXDP1wLjXwMJLyOyb3kJJPK76MqWcGSKfsXnfnJO4ZP0zK0rRchqJybVnqtbPUSnah6ch9ZZra0H8ZT5+jqOu1dTcerbuJ8RAx4WHCgG+eo3s8J6fG9T327YCvNj6yADtTC/Ap4JaP5XKLj/4e+ei+NiPf78FJW7sOwbq532SuxFuTcgd4tfHnCt82J7dht1Ay+E/JP4GS/UFrz+GR84ZKETODL9sgZnVKQXYklueXq1WmiWa0d+CP/IMocYOh5/rYpn4f3Ciho4hGMIgTryiuHjL6d1y9bBSaI/Yk55DV47BDaZpfWWvXWio7DM2mskZ2IPr7+rN9g3l4nz8NtLXhyeG6wXGO5cCH1eaza+ZUIGfOeOYIKWDmdGeO0QpN50sxaiC4ZqOUrVZFUUlyRawDb2O5to7JMis1MzqHGNlTSu9JKkpb+T6feqc2QGeCuD+csY1b4/mqNe/FvLJ/tJB2PJpMqsqxzTtjsLc7o/9vTgjCZGF9AJkrAg+VF4/N1S+hO6QCrRAAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=78de1e2d83f05a100c7dcdc6feaad3b4"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT IN23d4266983745a100c7dcdc6feaad37d,ebd4266983745a100c7dcdc6feaad36e"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;abd4266983745a100c7dcdc6feaad36f&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Test"&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;3&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;fa14631a-677d-4d0c-9902-0541d984de1f&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:17:08&lt;/sys_created_on&gt;&lt;sys_id&gt;23d4266983745a100c7dcdc6feaad37d&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:15&lt;/sys_updated_on&gt;&lt;ui_id&gt;c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+VUXWvcMBD8K4efjfFH7mjuLaQEAm0DTZqXNpi1tL4TlSVXknO5Hvffu2udk9BcaAl965s1K+3M7A7eJXYI/RD8jT3zXq1Msvx6lybKMEbfu8RAh8kyEdZIFZQ19QikyT3ogQuX7Qz63tl7BqXyvYbt7bGaWCstHR4YenDUJ6BLlrvfSmHbY62hQU0troNTZkXPlaRTm0NbnIpCVOWiKvO8fHdSNIuqKUpZAUJF96aH55Pg2YcRSV91wnyE+4nJOsmyijxN8CGgkUjULWiPadKBkRCs2z4iDkFeGf0ErJUJ1C7hyw9e/aTe5XzOF1skjwJjUaytEnjVs5KIBGj0VLR66MynKJjnii0MOkxzJWTwWEvsWR3THbjb67XdfJ6ILpQZnRyK2grQjycI5LcZAnreAGrsqFHd0b5oCjUvTY2PSUuXrTQdslbbDZFyTDIQLDyjYUB2Qfj7Eb4Fp9jFR2pDj6PMBrwS9RgpahccWdiP46h/DCwoGjxYqeM06IIXTvXhjHgoPlH1Pn2Zx2dR3O3OaRsB5cy62Zde8mddZGJwNI6QxSiC3u+/DXleyeJlYN/Q4V/E+hTm7bzI58djfbI4FusjgX49y+UfssxL+cso53n+n2ZZ+Tpm8uBtJH9zlO84t5HBx4BIFMqTkBvGLqc/MBe2tGklnkMb676zhSds/wsYY1D5ywUAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;6fd4266983745a100c7dcdc6feaad36c&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Test"&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:17:08&lt;/sys_created_on&gt;&lt;sys_id&gt;ebd4266983745a100c7dcdc6feaad36e&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:15&lt;/sys_updated_on&gt;&lt;ui_id&gt;fa14631a-677d-4d0c-9902-0541d984de1f&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+VUXWvcMBD8K8bPxsh27mjuLaQEAm0DTZqXNpi1tL4TkSVXku9yNfffu/JHEtILDW3f+mbNrnZmVoP72HS+7by7MWfOybWOV1/vkljqgNF3H2toMF7F3GghvTS6HIAk3oLqQuGyjqAxnfZRJddrtJHfgI4yFjHGqE1I1yrY376tm2+kEhYnFS1Y4vJo41X/ouT3LZYKKlQ09Npbqdd0XQo61Qzq7JRnvMiXRc5Y/u4kq5ZFleWiAISC+uaL57Op6MOAJK+6DXyEu5nJWBFkZSyJ8cGjFkjUNSiHSdyAFuCN3T8iFkFcafUEbKT2NC4OzQ9O/qDZ+WIRGmskjxzHIt8YyfGqDUpGxEOl5qJRXaM/jYLDprGGTvl504R0DkuBbVAX6Cbu+npjdp9nogupBydTURkO6vEEnvxWnUcXXgAVNjSobKBtaQtla81WDpdJS5OuFR3SWpkdkYYopcCD8JSWAekF4e8H+BasDC4+0hi6PMqswEleDrGjcd6ShcOwjvJ7FwSNBicr5bgNanDcytafEc8WJ9WH5NfMPotr35/Ta3gUkbHRl1aEzzJLeWdpHT6tjLkP3saQHg7fOsYKzNjRMP/VrH8R9VNY1IuMLY5H/WR5LOpHQv56vvPf5Ds81BvjTa7/03xLV445nbwN5H8c77uQ5ZHBjQERyKUjITcBu5z/3KGwp5eW/Dm0M/Y+WHjCDj8BkAMI4gMGAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=78de1e2d83f05a100c7dcdc6feaad3b4"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=78de1e2d83f05a100c7dcdc6feaad3b4"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT IN13d4266983745a100c7dcdc6feaad338,67d4266983745a100c7dcdc6feaad33e,afd4266983745a100c7dcdc6feaad367"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:17:07&lt;/sys_created_on&gt;&lt;sys_id&gt;13d4266983745a100c7dcdc6feaad338&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Hotel Booking System" source="x_1461372_hotel"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:17:07&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:17:07&lt;/sys_created_on&gt;&lt;sys_id&gt;67d4266983745a100c7dcdc6feaad33e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Hotel Booking System" source="x_1461372_hotel"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:17:07&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:17:08&lt;/sys_created_on&gt;&lt;sys_id&gt;afd4266983745a100c7dcdc6feaad367&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Hotel Booking System" source="x_1461372_hotel"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:17:08&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_78de1e2d83f05a100c7dcdc6feaad3b4"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_78de1e2d83f05a100c7dcdc6feaad3b4"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_78de1e2d83f05a100c7dcdc6feaad3b4"/&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;26000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;internal_name&gt;test&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{static.62826bf03710200044e0bfc8bcbe5df1}}","label":"Abel Tuter","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"c8f3090a-67b8-481d-aec3-b969dabe08c1":["approval_conditions"]}},{"name":"Created or Updated_1.current.approval","label":"Trigger - Record Created or Updated➛Booking Record➛Approval","reference":"","reference_display":"Approval","type":"choice","base_type":"choice","parent_table_name":"x_1461372_hotel_booking","column_name":"approval","choices":[{"image":"","used":false,"label":"Approve","reference":false,"selected":false,"missing":false,"rawLabel":"Approve","value":"1","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Reject","value":"2","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Approve or Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Approve or Reject","value":"3","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}}],"usedInstances":{"c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345":["condition"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Booking Record","reference":"x_1461372_hotel_booking","reference_display":"Booking","type":"reference","base_type":"reference","usedInstances":{"c8f3090a-67b8-481d-aec3-b969dabe08c1":["record"],"b5103d9f-df4c-4ca1-9eea-6151bec59272":["record"]},"attributes":{}},{"name":"Created or Updated_1.current.booking_amount","label":"Trigger - Record Created or Updated➛Booking Record➛Booking amount","reference":"","reference_display":"Booking amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1461372_hotel_booking","column_name":"booking_amount","usedInstances":{"fa14631a-677d-4d0c-9902-0541d984de1f":["condition"]}},{"name":"Created_1.current.approval","label":"Trigger - Record Created➛Booking Record➛Approval","reference":"","reference_display":"Approval","type":"choice","base_type":"choice","parent_table_name":"x_1461372_hotel_booking","column_name":"approval","choices":[{"image":"","used":false,"label":"Approve","reference":false,"selected":false,"missing":false,"rawLabel":"Approve","value":"1","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Reject","value":"2","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}},{"image":"","used":false,"label":"Approve or Reject","reference":false,"selected":false,"missing":false,"rawLabel":"Approve or Reject","value":"3","parameters":{"name":"x_1461372_hotel_booking","dependent_values":[""]}}],"usedInstances":{"c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345":["condition"]}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Booking Table","reference":"x_1461372_hotel_booking","reference_display":"Booking","type":"table_name","base_type":"table_name","usedInstances":{"4afd6691-9651-4fed-94d1-b8e5e02d1d33":["table_name"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Booking Record","reference":"x_1461372_hotel_booking","reference_display":"Booking","type":"reference","base_type":"reference","usedInstances":{"c8f3090a-67b8-481d-aec3-b969dabe08c1":["record"],"b5103d9f-df4c-4ca1-9eea-6151bec59272":["record"]},"attributes":{}},{"name":"Created_1.current.booking_amount","label":"Trigger - Record Created➛Booking Record➛Booking amount","reference":"","reference_display":"Booking amount","type":"decimal","base_type":"decimal","parent_table_name":"x_1461372_hotel_booking","column_name":"booking_amount","usedInstances":{"fa14631a-677d-4d0c-9902-0541d984de1f":["condition"]}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Test&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="Test"&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:16&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f255a62d83745a100c7dcdc6feaad322&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:16&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=f255a62d83745a100c7dcdc6feaad322"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=f255a62d83745a100c7dcdc6feaad322"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=f255a62d83745a100c7dcdc6feaad322"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=f255a62d83745a100c7dcdc6feaad322^sys_idNOT INbe55a62d83745a100c7dcdc6feaad323"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;f255a62d83745a100c7dcdc6feaad322&lt;/id&gt;&lt;name&gt;Test&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:16&lt;/sys_created_on&gt;&lt;sys_id&gt;be55a62d83745a100c7dcdc6feaad323&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:16&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=be55a62d83745a100c7dcdc6feaad323"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=f255a62d83745a100c7dcdc6feaad322^sys_idNOT IN3655a62d83745a100c7dcdc6feaad331,4355a62d83745a100c7dcdc6feaad372,b255a62d83745a100c7dcdc6feaad344"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Test"&gt;f255a62d83745a100c7dcdc6feaad322&lt;/model&gt;&lt;model_id&gt;f255a62d83745a100c7dcdc6feaad322&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:16&lt;/sys_created_on&gt;&lt;sys_id&gt;3655a62d83745a100c7dcdc6feaad331&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:16&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3655a62d83745a100c7dcdc6feaad331"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Test"&gt;f255a62d83745a100c7dcdc6feaad322&lt;/model&gt;&lt;model_id&gt;f255a62d83745a100c7dcdc6feaad322&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:17&lt;/sys_created_on&gt;&lt;sys_id&gt;4355a62d83745a100c7dcdc6feaad372&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:17&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4355a62d83745a100c7dcdc6feaad372"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="Test"&gt;f255a62d83745a100c7dcdc6feaad322&lt;/model&gt;&lt;model_id&gt;f255a62d83745a100c7dcdc6feaad322&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:16&lt;/sys_created_on&gt;&lt;sys_id&gt;b255a62d83745a100c7dcdc6feaad344&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:16&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b255a62d83745a100c7dcdc6feaad344"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=f255a62d83745a100c7dcdc6feaad322"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=f255a62d83745a100c7dcdc6feaad322"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=f255a62d83745a100c7dcdc6feaad322^sys_idNOT INcb55a62d83745a100c7dcdc6feaad3ce"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Test"&gt;f255a62d83745a100c7dcdc6feaad322&lt;/flow&gt;&lt;name&gt;Created or Updated&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:17&lt;/sys_created_on&gt;&lt;sys_id&gt;cb55a62d83745a100c7dcdc6feaad3ce&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:17&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Created or Updated"&gt;a45d9180c32222002841b63b12d3aea7&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;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&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_create_or_update&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=f255a62d83745a100c7dcdc6feaad322^sys_idNOT IN0755a62d83745a100c7dcdc6feaad3cd,0755a62d83745a100c7dcdc6feaad3ce"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Ask For Approval"&gt;f8f2e9920b10030085c083eb37673abd&lt;/action_type&gt;&lt;action_type_parent display_value="Ask For Approval"&gt;bae0a1120b10030085c083eb37673a92&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f8f2e9920b10030085c083eb37673abd&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Test"&gt;f255a62d83745a100c7dcdc6feaad322&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id&gt;fa14631a-677d-4d0c-9902-0541d984de1f&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:17&lt;/sys_created_on&gt;&lt;sys_id&gt;0755a62d83745a100c7dcdc6feaad3cd&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:17&lt;/sys_updated_on&gt;&lt;ui_id&gt;c8f3090a-67b8-481d-aec3-b969dabe08c1&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1XW0/bMBT+K5Wfqy5peqNviApp0wYSl71QFDm2Q725ceY4QBf1v+84dtLQQilb91DBG+ea7xy+z65vCsQpGqPhKO6yo6OuF/meF3jeqE+8UcCiYDgYBph4qI0SPGeQqRiRioJ9j0VuHEVxohjWjLakal2n1PwZ+h2SK8USvVxCKuVZKvDiu6sAD5lxQSGOxje3bZRiBc01U2hcrIV2RSdwxASkXlTw1uHqRWpsKkk+B1whr5xfXeXERVqfJxCBIgPHayP2qFlCGeCIschYG81xAkNKtUBjrXJwwPj0PBGLOmPGE23nnOPHjP+GDwddkxczGIy4HdTmFY4Em9gd2VA8wRpfQneic1WvTHLCMrsWymKcC33S9NmE81RzmdgSbRq7ainyeXJml4LqBo1/SZ6xkLLUzGrQ29Hiy5l8uKiAnvKk3IobU0iCRW1hrRWPcm3gFIgJVq55jtOUJ3dhquQ9L4sByrxzJ8DoxEI+wDczfpd0MDG4O7BZ3DkF/6R0f8eKmyG+QRsoXrZRtshOBM6y1Siwx/BXbpDYwdwIYbkFuwJTRxRP9TF85Z45zMu2Y39EtvKLrOhk263I/xj6vYEfDLvhTGomwkjKnzDuJudfTnybFHaAWknhymFdg+6EUJphGXuqg7KsdWYDTgb+dhk4z0oHljzPyGDkHZgM3GgHr4PXJOD523hFRyseAQKYAYsw5kw0L4I9HPQ7oKjYfexgtE4djJfgOb6X5nN8L+vX+N59I99fPvdHnndolH9PJz/ZSjgWrHj1Q+Yq+T+s3wFExfovFsU66dfB/Q3ngw/Ovw/O9/pb6db4yVCfpUQmlBvEWYP59gRm2XGyuL4pikxjzUln0B11B1HsBUPf6wIRej3mRTEZRSRifRr7y+XtpmT+pdXbtLbD8PVTIhcse20ZTml1ULmiptrqq6rq6BTX29fj4gAF915+V5GtfIuPVvyiOSwIHs/Np/UUWdhTNJ6iRCZsitpTZLJCQ7DSDRkArg6UvqJYLq0nV9g18BvmqpriRVZmZmTGKPCz9D7xhKUgnH8fz/kddlJpcJKz1sQuZXNNTns1TrsXvnHbXbqEstOnK9689fp7u/V6HxLchwQBJg+r49RcaXAK7lGXt38AIknGJfISAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Test"&gt;f255a62d83745a100c7dcdc6feaad322&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;4&lt;/order&gt;&lt;parent_ui_id&gt;c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:17&lt;/sys_created_on&gt;&lt;sys_id&gt;0755a62d83745a100c7dcdc6feaad3ce&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:17&lt;/sys_updated_on&gt;&lt;ui_id&gt;b5103d9f-df4c-4ca1-9eea-6151bec59272&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+VVXU/bMBT9K5Wfoypp+kH7NlEhTWIgwcYLhcixb6g1J85sB+iq/vddx05bwWBF4qWan+L75XOufW5u10RwMiND4HEyTcYsTdJ0EMeDk2GSj9M8GfCUAiQkIhUtASM1MKU57h+pbJxhvT7VQC3wntK9HzV3n1nSZ43WUNnNBkO5MLWkq5uQgRa2FJKjn8xu7yJSU43FLWgyW79wHYpO0hwkhl518F7Ctava7bliTYm4MtEZz0PmPHh6X+fowSQHJ4kjAs8WKg4IpKDSQERKWiFLpVdkZnWDBuTPLyu52kYsRWU90ZI+G/EbTx7GLq4AZMZCE7bb7zSXMPdN8q5iTi29xurMNnrbMyUYGN8XDgVtpD3dt/mAy9oKVfkU6wqHbCWbsrrwXSHbAnt30hjIONSOq0PvqRXXS/V01QE9E1XblkBTKkbldket1SJvrIOzJiCh7XNJ61pUD1mt1aNokxFK2X+QuOkXUj3hmUY8VH3KHO4+dpb2z9A+b803VAtH4huWweRNRMzKnEpqzI4K9jH71TgknligkLVdaFuQta/BJTMtavsFj3qEAHwTBQ3ko/deGZvuHtVezZ0OnrNkOE7SySBbKgsyy5X6icRfP/+3Az+migPwdqpoH9gb+IMwXtnO93N7F94RZDH6NFmcHJssApWj18W/1BAP3p25e6+pFYDZU0JNVy1FY6ltDE7aRRPHKV8vOiUsyGxB5rgWJFr4tNY0oNNRmo6Sk3QST8dJHLMJZ5yNC6CUp+mkDUeeruRh8Zv7oK6MlqqprEcy9eu1NI8I+cdmxQG32c2KMwGSm79cbzcooMROWMj8db8YFsHZuwnO7X/00yZGMo7bdWRz47/5nd79AYjnhlpUCgAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=f255a62d83745a100c7dcdc6feaad322"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f255a62d83745a100c7dcdc6feaad322^sys_idNOT IN4755a62d83745a100c7dcdc6feaad3cc,cb55a62d83745a100c7dcdc6feaad3c9"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;abd4266983745a100c7dcdc6feaad36f&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Test"&gt;f255a62d83745a100c7dcdc6feaad322&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;3&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;fa14631a-677d-4d0c-9902-0541d984de1f&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:17&lt;/sys_created_on&gt;&lt;sys_id&gt;4755a62d83745a100c7dcdc6feaad3cc&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:17&lt;/sys_updated_on&gt;&lt;ui_id&gt;c1d1eadf-3814-4fe0-9e8f-f4b4d96ec345&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1Vy27bMBD8FYNnQdAjNprcAhsBAqQN0KS5tIGwIimbKEWqfMRxBf97l6L8QOKiTZFjb+Isd3d2uAP1RHvXeWfv9aW1YqnIxdfHhAgVMPzuiYKWkwtCtWLCCa2qAUjIE0gfAtfNBLrO6KcAMmE7CZuHUzG6EpIZPnbowGAdxw256F+EBMPUJoMmP6c5LYtZWWRZ8eEsr2dlnResBA4lFpRQc4lX5ztqk5sBSX7L2W26gFtnhFqO55uxyt0O1IYFVnmWEP7suGIc+TQgLU9IC4qB02azRwwHdqvkAVgJ5bAcCZefrfiJDYvpNFxsOI5IeQzuj/dQS76IusVQswAHSMdT5814na60oNxGgRhvwEs3P8bihdsujBtTXCg8ZmvpW/UpqkL2BXbPhIi3vGK8C9MG+uMszd1Krz/vmF4JNSgzBqWmIPcncKhf7V3g0xMueYuFqhafH1Wtwg6IIRm5tOlS4iFtpF5j07B1KdBAPEVxIb1CfDHAD2BEmOIjlsHkSLMGK2g1bCiWQ5k42SbEbuxcgrWHIVHh6ocPFOPI43BV1CekUCM6d4mdcT/jHNvk9cIf7Xrfz/G9HWcTbSZfOhY+qzyl3qBALo27DnK7/eazrGT5a0f8Q4W3+eYcps00z6anfXM2O+WbE455o1mKP5glvNJfeiXLsv9meRezCFvFFR9nG5q/o1cegzFiz73WVFikNjzT9e4fEgIbXDBBj6G1Nt/DUAds+wsiQgq6jQYAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;6fd4266983745a100c7dcdc6feaad36c&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Test"&gt;f255a62d83745a100c7dcdc6feaad322&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:17&lt;/sys_created_on&gt;&lt;sys_id&gt;cb55a62d83745a100c7dcdc6feaad3c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:17&lt;/sys_updated_on&gt;&lt;ui_id&gt;fa14631a-677d-4d0c-9902-0541d984de1f&lt;/ui_id&gt;&lt;values&gt;H4sIAAAAAAAA/+1VXWvbMBT9K0bPxthxE9a8lYRCoVth7fqyFXMtyYmoLHn6SJqF/PddWc4HW8Za1se9WUdX955zpIO3RHvXeWcf9JW1YqHI9OtTSoQKGH5viYKWkymhWjHhhFZVD6RkBdKHjZsmgVZ75ZJaLBbcJG4JKinyJM9zLGPCdhI2j6+rpkshmeEDiw4MznLckOn2ly3BsFmTQ1Nc0oKWo0k5yvPRh4uinpR1MWIlcCixoYSaSyyd7ekntz2S/lGX23QBt84ItRjWt0OX+z2oDQusijwl/MVxxTjyaUBanpIWFAOnzeaAGA7sTskjsBTKYTsSil+s+IEDR+NxKGw4SqQ8bh6WD1BLPo9Oxq1mDg6QjqfOm6GcLrWg3EaDGG/ASzc7xWLBXRfkxiMuNB5Oa+lb9Sm6Qg4N9heHiLe8YrwLagP9QUtzv9Trz3um10L1zgybUlOQhxU49K/2LvDZEi55i42qFroOXa06o1eiP4xc2mwhcZE1Uq9xaHiZGdBAPENzIbtGfN7Dj2BEUPER2+DhSLMGK2jVv2JshzZxskuJ3diZBGuPItHh6rsPFKPkQVwV/QlHqBGdu8LJKz7o2KW/h+IkD9vtDO/bcZZok3zpWPisiox6gwa5rNb6OaiNKdjtvvk8L3mRn03LP/V6W5YuYdyMi3x8PksXk3NZOpOiNwZo9JcAhZt7ZX5Q9P8AvUuAhK3isx+09cPfMT9PISxx5sFrKixS66/pZv/vCRsbfGCCnkJrbZ6DqCO2+wkocmkbxQYAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=f255a62d83745a100c7dcdc6feaad322"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=f255a62d83745a100c7dcdc6feaad322"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322^sys_idNOT IN4b55a62d83745a100c7dcdc6feaad36e,7a55a62d83745a100c7dcdc6feaad340,8355a62d83745a100c7dcdc6feaad377"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:16&lt;/sys_created_on&gt;&lt;sys_id&gt;4b55a62d83745a100c7dcdc6feaad36e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Hotel Booking System" source="x_1461372_hotel"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:16&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:16&lt;/sys_created_on&gt;&lt;sys_id&gt;7a55a62d83745a100c7dcdc6feaad340&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Hotel Booking System" source="x_1461372_hotel"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:16&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:17&lt;/sys_created_on&gt;&lt;sys_id&gt;8355a62d83745a100c7dcdc6feaad377&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Hotel Booking System" source="x_1461372_hotel"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hotel Booking System"&gt;2dd48445833c1210f7c511b6feaad3a4&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:17&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f255a62d83745a100c7dcdc6feaad322"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_f255a62d83745a100c7dcdc6feaad322"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f255a62d83745a100c7dcdc6feaad322"/&gt;&lt;sys_hub_flow action="UPDATE"&gt;&lt;sys_id&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/sys_id&gt;&lt;latest_snapshot&gt;f255a62d83745a100c7dcdc6feaad322&lt;/latest_snapshot&gt;&lt;compiler_build/&gt;&lt;/sys_hub_flow&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=78de1e2d83f05a100c7dcdc6feaad3b4^sys_idNOT INd355e62d83745a100c7dcdc6feaad329"/&gt;&lt;sys_flow_trigger_plan action="INSERT_OR_UPDATE"&gt;&lt;binding_strategy&gt;com.snc.process_flow.engine.binding.Every&lt;/binding_strategy&gt;&lt;plan/&gt;&lt;plan_id&gt;78de1e2d83f05a100c7dcdc6feaad3b4&lt;/plan_id&gt;&lt;snapshot&gt;f255a62d83745a100c7dcdc6feaad322&lt;/snapshot&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-22 11:19:18&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d355e62d83745a100c7dcdc6feaad329&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-22 11:19:18&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;9f55e62d83745a100c7dcdc6feaad301&lt;/trigger&gt;&lt;/sys_flow_trigger_plan&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=78de1e2d83f05a100c7dcdc6feaad3b4"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-478306372</payload_hash>
+        <record_name>Test</record_name>
+        <reverted_from/>
+        <source>429285d58334d2100c7dcdc6feaad3be</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:19:18</sys_created_on>
+        <sys_id>d355e62d83745a100c7dcdc6feaad35d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19219751d550000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:19:18</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>5b55e62d84745a10fe619733d213d75c</update_guid>
+        <update_guid_history>5b55e62d84745a10fe619733d213d75c:-478306372,f255662d70745a108c70055aa98dc7f8:-997462056,d555e22d59745a1005919e66056d709e:787278137,862562e91b745a10933f99d60a315ef2:-1459519377,b7d4266969745a10162ab1d84dd02fd5:427885331,c1de566dd8f05a104d1d3eaa5bf784f7:-1444355003</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 11:22:28</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>3595074ee7c14654bb3ec577a3c5a384</sys_id>
+        <sys_metadata>78de1e2d83f05a100c7dcdc6feaad3b4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test</sys_name>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_scope_delete display_value="">04864376358248ab840d8f48c7fb6731</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_78de1e2d83f05a100c7dcdc6feaad3b4</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_78de1e2d83f05a100c7dcdc6feaad3b4">d355e62d83745a100c7dcdc6feaad35d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 11:22:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

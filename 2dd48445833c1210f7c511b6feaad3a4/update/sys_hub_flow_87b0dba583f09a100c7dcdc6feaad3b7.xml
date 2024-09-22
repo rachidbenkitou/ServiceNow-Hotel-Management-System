@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1446000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>HBS: Change Booking Room Status and Send Email to guest.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>hbs_change_booking_room_status_and_send_email_to_guest</internal_name>
+        <label_cache>[{"name":"subflow.booking_room.booking_id.guest_id.email","label":"Input➛Booking_Room➛Booking➛Guest➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"e5156be2-714f-4c81-b815-f634e85f3e8c":["ah_to"]}},{"name":"c780f13d-cd6d-476f-82c0-263325f4cfba.record.booking_id.guest_id.email","label":"1 - Update Record➛x_1461372_hotel_booking_room Record➛Booking➛Guest➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{}},{"name":"c780f13d-cd6d-476f-82c0-263325f4cfba.record","label":"1 - Update Record➛x_1461372_hotel_booking_room Record","reference":"x_1461372_hotel_booking_room","reference_display":"Booking_Room","type":"reference","base_type":"reference","usedInstances":{"e5156be2-714f-4c81-b815-f634e85f3e8c":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.room_status","label":"Input➛Room_Status","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"2e502c11-c4c0-4d13-8f9c-984a4b398ff2":["availability"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d13b31b6-633d-4666-b966-c0250ea70557"}},{"name":"c780f13d-cd6d-476f-82c0-263325f4cfba.record.room_id","label":"1 - Update Record➛x_1461372_hotel_booking_room Record➛Room","reference":"x_1461372_hotel_room","reference_display":"Room","type":"reference","base_type":"reference","parent_table_name":"x_1461372_hotel_booking_room","column_name":"room_id","usedInstances":{"2e502c11-c4c0-4d13-8f9c-984a4b398ff2":["record"]}},{"name":"subflow.booking_room_status","label":"Input➛Booking_Room_Status","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"c780f13d-cd6d-476f-82c0-263325f4cfba":["status"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"09a9d78b-f4b5-4178-b7b5-739843aa25bb"}},{"name":"subflow.booking_room.status","label":"Input➛Booking_Room➛Status","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"c780f13d-cd6d-476f-82c0-263325f4cfba":["status"]}},{"name":"subflow.booking_room","label":"Input➛Booking_Room","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"c780f13d-cd6d-476f-82c0-263325f4cfba":["record"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"970ae851-5fa0-439b-a03c-ceb7e9f84db7","uiTypeLabel":"Reference"}}]</label_cache>
+        <master_snapshot>14f4972583749a100c7dcdc6feaad3c7</master_snapshot>
+        <master_snapshot_digest/>
+        <name>HBS: Change Booking Room Status and Send Email to guest.</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:28:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>87b0dba583f09a100c7dcdc6feaad3b7</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>HBS: Change Booking Room Status and Send Email to guest.</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name>sys_hub_flow_87b0dba583f09a100c7dcdc6feaad3b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:52:55</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=87b0dba583f09a100c7dcdc6feaad3b7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=87b0dba583f09a100c7dcdc6feaad3b7"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=87b0dba583f09a100c7dcdc6feaad3b7"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=87b0dba583f09a100c7dcdc6feaad3b7^sys_idNOT IN43b0db6983f09a100c7dcdc6feaad324"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>87b0dba583f09a100c7dcdc6feaad3b7</id>
+        <name>HBS: Change Booking Room Status and Send Email to guest.</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:28:47</sys_created_on>
+        <sys_id>43b0db6983f09a100c7dcdc6feaad324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:28:47</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=43b0db6983f09a100c7dcdc6feaad324"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=87b0dba583f09a100c7dcdc6feaad3b7^sys_idNOT IN1ee4d32583749a100c7dcdc6feaad3bd,39e45f2183349a100c7dcdc6feaad3ae,d2e4d32583749a100c7dcdc6feaad3b9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=d13b31b6-633d-4666-b966-c0250ea70557</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>room_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Room_Status</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="HBS: Change Booking Room Status and Send Email to guest.">87b0dba583f09a100c7dcdc6feaad3b7</model>
+        <model_id>87b0dba583f09a100c7dcdc6feaad3b7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_87b0dba583f09a100c7dcdc6feaad3b7</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:02</sys_created_on>
+        <sys_id>1ee4d32583749a100c7dcdc6feaad3bd</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:52:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1ee4d32583749a100c7dcdc6feaad3bd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=970ae851-5fa0-439b-a03c-ceb7e9f84db7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1461372_hotel_booking_room</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>booking_room</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Booking_Room</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="HBS: Change Booking Room Status and Send Email to guest.">87b0dba583f09a100c7dcdc6feaad3b7</model>
+        <model_id>87b0dba583f09a100c7dcdc6feaad3b7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_87b0dba583f09a100c7dcdc6feaad3b7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1461372_hotel_booking_room">x_1461372_hotel_booking_room</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:00</sys_created_on>
+        <sys_id>39e45f2183349a100c7dcdc6feaad3ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=39e45f2183349a100c7dcdc6feaad3ae"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=09a9d78b-f4b5-4178-b7b5-739843aa25bb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>booking_room_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Booking_Room_Status</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="HBS: Change Booking Room Status and Send Email to guest.">87b0dba583f09a100c7dcdc6feaad3b7</model>
+        <model_id>87b0dba583f09a100c7dcdc6feaad3b7</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_87b0dba583f09a100c7dcdc6feaad3b7</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:02</sys_created_on>
+        <sys_id>d2e4d32583749a100c7dcdc6feaad3b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d2e4d32583749a100c7dcdc6feaad3b9"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=87b0dba583f09a100c7dcdc6feaad3b7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=87b0dba583f09a100c7dcdc6feaad3b7"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=87b0dba583f09a100c7dcdc6feaad3b7"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=87b0dba583f09a100c7dcdc6feaad3b7^sys_idNOT IN52e4d32583749a100c7dcdc6feaad3d6,5ae4d32583749a100c7dcdc6feaad3d4,d6e4d32583749a100c7dcdc6feaad3d3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="HBS: Change Booking Room Status and Send Email to guest.">87b0dba583f09a100c7dcdc6feaad3b7</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:02</sys_created_on>
+        <sys_id>52e4d32583749a100c7dcdc6feaad3d6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:52:48</sys_updated_on>
+        <ui_id>e5156be2-714f-4c81-b815-f634e85f3e8c</ui_id>
+        <values>H4sIAAAAAAAA/+2XUXPaOBDHv4rGz+AaGwzkrdc0185c25mW6T00HY8syaCLbPlkOYRm+O63smWMoSEMpNe7aR4taVf/3f2tJH+5dzh1LpwhnXhhnAzx2Av8wPMm/nQaB9PEm4yn3oBQp+dkOGWwUjEilfm+xaI0A/f3ZDzxkkFA+4SGtD8ch0l/4hOv74dB4I+SIUli7NZ26zVYUl7kAq8+WwcwQhZcUMUy5+LL156TYwV7aaaci/udKb3KWSRwzAQYXkpSpizT6O0l+Dg2jsZ6htWcafSxiWc3PrMVfFO7ScTNIEwZWV7PYXeaZZTBpgkWBes5Kc4o1lKtNiOKYfohE+3AgmcaXL4sCkk41qxAesEQSzEXaMn1AmFUb+86xt9dwb+BhMA3rhIGSSBGEc8Ip6CoypvkhH3INZdZnUmNY9EkVYoyzd7XYZm0swSXQm+lvSxYRFlu4jDCtCpBZPJpIZcfm/2ueFZFbCMQkmCx+cJaKx6XEEhVKcGwav1FlSTjE3ZiglVJTHGe82we5Ure8soxyEzduYAPNxFyCfYFn2cuJiYmFzKK3SsYv6yGP2PFTYDvwA0Yr6vERH+XRlMdYndzszaqCgtLC6J4rl+C41tmQ1j3LP+D6SFu6LDlY8tn2wN30WAYDoKxHy2kZiKKpbwxYSop033gH1l9WjPMjC70vtZ1bEwd4wditH3QGbNtMDirDWbAvq6bsKYeaStjg/7E66L/5MhbRScz/2O4hgIWUY2rja3a/FHeH6PcC8M4DuPROGiJmJKEjuMkxGMStAQs4XRSKVY3UXU6baE+2OfZ9viJ3ILxi6sqvN7RKhvjtxkRJWXoz0buoQgsyNBtcFBlLcX+WRTXJCItEdROrOAI3+xsBtsDXi+wRrxABZTLRTOJuBW/ZdFDK1mitCw0LNMw0+mPzq0wfNrWsDW0o5ffLfD/onfO7ZHR4VMTt4ThRaRl5yFUlLHR624f6JsPTt15yQrzkHArItZrtN9Lpzk5rfU+QTWyedN2RwS+6Vm5nwXbXUXj0zZXcLi56ifHXm9tXQDer3oFUCZ4yqsq1g14Ltn0YIGZ16kpIVtkP+GbvcvcEZIaw1ev9vU9wNzwtAP9GbofAN3g4A8ZCztFjf8d6o7Q1Bj+toNdfIi70TN3/xnuRodrTDpVhSv3L0b0Fnu/w6PL/J+8tm/HHRB3p5/k/n1c8cZwo/d7MTxAZ/h8E/+UByU+WNfE754vkq62MLwuPS8gOTIK+5pnq5QweA/qGNJwU03Sa+e6XsbeMCEkgtwhrJj5kXBr8xd5Pb+PsXV/tPlpmL+ZvfujgfyIZGyO3joVe7mxeC90Klq4x2ceveFoFIS/JN5QxyX1qZJ5bmM76/z9+g9S/cYUUhYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="HBS: Change Booking Room Status and Send Email to guest.">87b0dba583f09a100c7dcdc6feaad3b7</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:02</sys_created_on>
+        <sys_id>5ae4d32583749a100c7dcdc6feaad3d4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:02</sys_updated_on>
+        <ui_id>2e502c11-c4c0-4d13-8f9c-984a4b398ff2</ui_id>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUBnW9DLsuNbAcNAD02AtMglDQSKXNkEKFIlKceu4H/vUg/HedY10kOB6sbV7s7M7mDvGo8zb+4lwILwMkxpHMZxFATRLAnzNM7DiMUEIPRGniQlYKYGqjTD94aI2gWahk5nQRHGbExZysbJNC3Gs4gG4yjFXpMioUVO/K7O10qVGWf7PXZg3FSC7G77Rhihay6YBunN7+5HXkU0YlrQ3rx59svuKsgEyUFg4ULRugRpLz4vsMepeobqm0HQc4EOA9+s746sMYi/HJ8wGHmwtSAZIFxBhIGRVxLJiFV6582trjGggbBrKXaHjDWXtlNakq3hP7F/Eri8AlAaPUxBcQrXleVKdhFLcjH8VKIu5VXH1Q0RClILezTE2kDGoHLcHFpHpfi6Vg83A86Sy1ZGT0soSsThRazVPK8tGDd3ENCqL0lVcbnKKq02vC1GKqW/EvjwC6EeENPwlfQJdbx9nATxlxhftOFborkT8QXbYPG+FZ39qB1uJ6MnnLWaW8FZuxFMNVTzyn7Cxhvoae5HvXPzyXubppePiz3q+ejebRYmaRhPo2ytLIjM+fOlNd/IOs+u3xyPi6uOx6kanhS/oak37JNY79fJh/l19rf92kP/Y4b9nU2D6N2DdLTS1pnmyKJkQziunwtud9/rIIhZ05g6dxK6c2ossbV57aT+SemZZoYSAS1cdJCjk9UODZYcBDOvyB/c3ANkmx7gcIE/zNJhGrTf/0N8ziG+/wVmm4JWRAgAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="HBS: Change Booking Room Status and Send Email to guest.">87b0dba583f09a100c7dcdc6feaad3b7</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:02</sys_created_on>
+        <sys_id>d6e4d32583749a100c7dcdc6feaad3d3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:02</sys_updated_on>
+        <ui_id>c780f13d-cd6d-476f-82c0-263325f4cfba</ui_id>
+        <values>H4sIAAAAAAAA/+1UwW7bMAz9lUBnw7DjNGtzKxAE2GEt0A29dIUgW0wiTJY8SU6TBf73Ubacpl3WpkF7GDDfRJN875EPvNsSwcmEjIAn6UU6LrI0y4ZJMjwfpfk4y9MhzxhASiKiWAmYaaDQhuN7xWTtA9utrfO51A9xrvUPoRbUaF02DaZwYSvJNrchEyPFUkhuQJHJ3X1EKmawqQNDJttnv9ymAipZDhILp7qoS1Bu8HmKPY4l3Fff9IyfK/AY+OahOxU+iL88nzSJCKwdKA4IN2fSQkRKpjhz2mzIxJkaAwYYv1Zys8tYCuU6pSVbW/EL+48SnzcHlFbspqBFAdeVE1p1Ecdy2f/Usi7VVcfVDxHmrJZub4i1Bcqh8tw8Wkdl/nWpH256nJlQrYxAS+qCyd2LOWdEXjuwfu4goVVfsqry26uMXom2GKmU8ULiI/b7RUwrFipmhecd4yRYPMP4tA3fMiO8iC/YBoubVjT9WXvcTkYgTFvNrWDabgRTbWFE5S6x8QoCzSYK1szPXtp0cfG42L2ej/Zc03Q0TrNPQ7rUDiTdN+mfFn0l+zT7fvO8Blcdr2M1PSn+i8Zg4Cex4N+zd/Pv+Uf7N0D/YwZ+zbbJ8MUDtbfS1ql2z7LWMVfb73WSZPzwdaVdyqEj+7biEw0NJUI6GHSg0dGK+wYzAZLbAyPoHR0A6CoA7K7yu9k6HSft9/84n3Cc+yBSbJr731afX6RFCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=87b0dba583f09a100c7dcdc6feaad3b7"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=87b0dba583f09a100c7dcdc6feaad3b7"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=87b0dba583f09a100c7dcdc6feaad3b7"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=87b0dba583f09a100c7dcdc6feaad3b7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_87b0dba583f09a100c7dcdc6feaad3b7^sys_idNOT IN56e4d32583749a100c7dcdc6feaad3b7,56e4d32583749a100c7dcdc6feaad3cf,9ee4d32583749a100c7dcdc6feaad3bb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>booking_room</element>
+        <help/>
+        <hint/>
+        <label>Booking_Room</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_87b0dba583f09a100c7dcdc6feaad3b7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:02</sys_created_on>
+        <sys_id>56e4d32583749a100c7dcdc6feaad3b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>room_status</element>
+        <help/>
+        <hint/>
+        <label>Room_Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_87b0dba583f09a100c7dcdc6feaad3b7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:02</sys_created_on>
+        <sys_id>56e4d32583749a100c7dcdc6feaad3cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>booking_room_status</element>
+        <help/>
+        <hint/>
+        <label>Booking_Room_Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_87b0dba583f09a100c7dcdc6feaad3b7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:02</sys_created_on>
+        <sys_id>9ee4d32583749a100c7dcdc6feaad3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_87b0dba583f09a100c7dcdc6feaad3b7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_87b0dba583f09a100c7dcdc6feaad3b7"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_87b0dba583f09a100c7dcdc6feaad3b7"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>HBS: Change Booking Room Status and Send Email to guest.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>hbs_change_booking_room_status_and_send_email_to_guest</internal_name>
+        <label_cache>[{"name":"subflow.booking_room.booking_id.guest_id.email","label":"Input➛Booking_Room➛Booking➛Guest➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{"e5156be2-714f-4c81-b815-f634e85f3e8c":["ah_to"]}},{"name":"c780f13d-cd6d-476f-82c0-263325f4cfba.record.booking_id.guest_id.email","label":"1 - Update Record➛x_1461372_hotel_booking_room Record➛Booking➛Guest➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email","usedInstances":{}},{"name":"c780f13d-cd6d-476f-82c0-263325f4cfba.record","label":"1 - Update Record➛x_1461372_hotel_booking_room Record","reference":"x_1461372_hotel_booking_room","reference_display":"Booking_Room","type":"reference","base_type":"reference","usedInstances":{"e5156be2-714f-4c81-b815-f634e85f3e8c":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.room_status","label":"Input➛Room_Status","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"2e502c11-c4c0-4d13-8f9c-984a4b398ff2":["availability"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"d13b31b6-633d-4666-b966-c0250ea70557"}},{"name":"c780f13d-cd6d-476f-82c0-263325f4cfba.record.room_id","label":"1 - Update Record➛x_1461372_hotel_booking_room Record➛Room","reference":"x_1461372_hotel_room","reference_display":"Room","type":"reference","base_type":"reference","parent_table_name":"x_1461372_hotel_booking_room","column_name":"room_id","usedInstances":{"2e502c11-c4c0-4d13-8f9c-984a4b398ff2":["record"]}},{"name":"subflow.booking_room_status","label":"Input➛Booking_Room_Status","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"c780f13d-cd6d-476f-82c0-263325f4cfba":["status"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"09a9d78b-f4b5-4178-b7b5-739843aa25bb"}},{"name":"subflow.booking_room.status","label":"Input➛Booking_Room➛Status","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"c780f13d-cd6d-476f-82c0-263325f4cfba":["status"]}},{"name":"subflow.booking_room","label":"Input➛Booking_Room","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"c780f13d-cd6d-476f-82c0-263325f4cfba":["record"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"970ae851-5fa0-439b-a03c-ceb7e9f84db7","uiTypeLabel":"Reference"}}]</label_cache>
+        <master>true</master>
+        <name>HBS: Change Booking Room Status and Send Email to guest.</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="HBS: Change Booking Room Status and Send Email to guest.">87b0dba583f09a100c7dcdc6feaad3b7</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>14f4972583749a100c7dcdc6feaad3c7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:52:54</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=14f4972583749a100c7dcdc6feaad3c7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=14f4972583749a100c7dcdc6feaad3c7"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=14f4972583749a100c7dcdc6feaad3c7"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=14f4972583749a100c7dcdc6feaad3c7^sys_idNOT IN9cf4972583749a100c7dcdc6feaad3c8"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>14f4972583749a100c7dcdc6feaad3c7</id>
+        <name>HBS: Change Booking Room Status and Send Email to guest.</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:10</sys_created_on>
+        <sys_id>9cf4972583749a100c7dcdc6feaad3c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:10</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9cf4972583749a100c7dcdc6feaad3c8"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=14f4972583749a100c7dcdc6feaad3c7^sys_idNOT INb0f4d72583749a100c7dcdc6feaad39e,b4f4d72583749a100c7dcdc6feaad332,dcf4972583749a100c7dcdc6feaad3c9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=d13b31b6-633d-4666-b966-c0250ea70557</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>room_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Room_Status</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="HBS: Change Booking Room Status and Send Email to guest.">14f4972583749a100c7dcdc6feaad3c7</model>
+        <model_id>14f4972583749a100c7dcdc6feaad3c7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_14f4972583749a100c7dcdc6feaad3c7</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:12</sys_created_on>
+        <sys_id>b0f4d72583749a100c7dcdc6feaad39e</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:52:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b0f4d72583749a100c7dcdc6feaad39e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=09a9d78b-f4b5-4178-b7b5-739843aa25bb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>booking_room_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Booking_Room_Status</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="HBS: Change Booking Room Status and Send Email to guest.">14f4972583749a100c7dcdc6feaad3c7</model>
+        <model_id>14f4972583749a100c7dcdc6feaad3c7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_14f4972583749a100c7dcdc6feaad3c7</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:12</sys_created_on>
+        <sys_id>b4f4d72583749a100c7dcdc6feaad332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b4f4d72583749a100c7dcdc6feaad332"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=970ae851-5fa0-439b-a03c-ceb7e9f84db7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1461372_hotel_booking_room</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>booking_room</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Booking_Room</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="HBS: Change Booking Room Status and Send Email to guest.">14f4972583749a100c7dcdc6feaad3c7</model>
+        <model_id>14f4972583749a100c7dcdc6feaad3c7</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_14f4972583749a100c7dcdc6feaad3c7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_1461372_hotel_booking_room">x_1461372_hotel_booking_room</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:10</sys_created_on>
+        <sys_id>dcf4972583749a100c7dcdc6feaad3c9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dcf4972583749a100c7dcdc6feaad3c9"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=14f4972583749a100c7dcdc6feaad3c7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=14f4972583749a100c7dcdc6feaad3c7"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=14f4972583749a100c7dcdc6feaad3c7"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=14f4972583749a100c7dcdc6feaad3c7^sys_idNOT IN45f4d72583749a100c7dcdc6feaad3bb,4df4d72583749a100c7dcdc6feaad3ba,c5f4d72583749a100c7dcdc6feaad3bd"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="HBS: Change Booking Room Status and Send Email to guest.">14f4972583749a100c7dcdc6feaad3c7</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:13</sys_created_on>
+        <sys_id>45f4d72583749a100c7dcdc6feaad3bb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:13</sys_updated_on>
+        <ui_id>2e502c11-c4c0-4d13-8f9c-984a4b398ff2</ui_id>
+        <values>H4sIAAAAAAAA/+VVy07jMBT9FeR1G+VRQuluRFVpJAYkGLFhUHRj37SWnDhjO4VO1H8fO3ZLxWtAYoOmO9+Xzzm5p77tCWdkRibI4uQ0yWmWZFkax+l0kpR5ViYpywAxISPSQI22UiGVitnzGkTnAn1PT6ZxlWRsTFnOxpOTvBpPUxqP09zOOq4mtCoh8n2RkrIuONtu7QTGdStgcxMG2QhdccEUNmR2ezciLSh7p0FFZv2T1HtBCyhR2NKrHeqnLMymdWcmaVdjYyy0EDwPnfOQOfo+txnb5OAk8Yjgg8GGoQVSgdA4IjU0DIxUGzIzqrMBhcAuG7HZV6x4YzzRGh40/2NvnsSurkLLjAYR9sefUAqce5F8qpqDgWs7nZpO7TWTnKL2ujCsoBPm7DDmCy5bw2XjW4wbHLql6OrmwqtC9gMOvkmnsWDYOq4OvadWXa/k/dUO6II3gyyBppAUxP4ExihedsbB6QkKHHSuoW15syxaJdd8aLZQ6mgp7CGqhLy3d2q+bCKgDndklYVoYePzIXwDijsSP+wY27wdEb3RZwK0fqRidSx+dw6JJxYoFIMKgwTFsA2umSremm/2qjUG4NtRsEZ5/NaW0dPHpTqY+WiPhyKZ5El2khYraVAUzgDPd/+Vqo/54R1Id34YVusV5MESz2Lnh71HFz4RDHH8aYaYfjVDBCpf3hH/8kGcvvlve7BNw+rrAw/AGrjdPC642fzq4jhjfa+70pHyD4I2YDr90qPwkdaPueUdfHZuWXAUTL9AcGcVrC1mg4Un/MQuIXl0E5L7N+TTPJPk8fD7Ys75b56Su78elobBZwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="HBS: Change Booking Room Status and Send Email to guest.">14f4972583749a100c7dcdc6feaad3c7</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:13</sys_created_on>
+        <sys_id>4df4d72583749a100c7dcdc6feaad3ba</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:13</sys_updated_on>
+        <ui_id>c780f13d-cd6d-476f-82c0-263325f4cfba</ui_id>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPKEoIZS1vUxHSpK6V2omXroqc+AasOXHmDwpD+e+zYydElLUg9QWNN98vn3NyD37eIUrQFI2BhNFNNMniKI5HYTi6HkfpJE6jEYkxQISGqMQFmEoBGRfEnNeYaRvY7aROc8Zfg5TzX7RcJoLzoq5NCaGyYni78JUmkq0oIwJKNH1+GaIKCzNUgUDT3UHqVFQMp8BM6WML6xCm2lb2THimCyhVQtvgne+c+czg28xkTJOFE4VDBBsFJQEDJMdMwhAVuCRYcbFFUyW0CQjA5KFk265iRUvliBZ4I+kfc/M4tHU5GGaZF6E7/sApg5kTyaXyGVb4yUzPlBadZpxmIJ0uBHKsmbrtx1zBQ6UoL12LsoN9N2e6KO+dKqgb0PsmWkJCoLJcLXpHLX9a8dfHFuiclo0snibjGWbdCSslaKqVhbNDwKDRucBVZZehEnxNm2YDpQiWzBwCuy7mTkmXZYAzizswyuJgbuKzJrzAgloS380Y01wPkdzKW4al3FMxOia/tUXiiHkKSaNCI0HSbINtzgSt1Fdz1Ro88Hrodz+9em/Lspv9UvVm7vd/k0TjSRR/GSUrroAlfRe89cAH1ef54wTkrT+aVfsHE2+RN7G7fu/g3iW8Qa4+zSDXl2YQT+XiHfKRL8LRu/++vW1qrCB7npAKKy1/6jCMyfH3IXElx56J85rPc8wJnFrHzCkwIo+QbO0ChUGtIHGkDyzjk4OFT3bvyqf5JpqEze/C3PO/PC9t0ICu65e/S+KSvmgJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="HBS: Change Booking Room Status and Send Email to guest.">14f4972583749a100c7dcdc6feaad3c7</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:13</sys_created_on>
+        <sys_id>c5f4d72583749a100c7dcdc6feaad3bd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:52:54</sys_updated_on>
+        <ui_id>e5156be2-714f-4c81-b815-f634e85f3e8c</ui_id>
+        <values>H4sIAAAAAAAA/+2XXXPaOBSG/4rG1+AaGwzkrhuabWfSdqYw3Yum45ElGbSRLa8th7AZ/vse2cI2kCGQ0plkNpfW53uO3kdH/vFgcWpdWH06cvww6uOh47me44zc8Tj0xpEzGo6dHqFWx0pwzGBkxojM9PcdFoVueHggw5ET9TzaJdSn3f7Qj7ojlzhd1/c8dxD1SRRiu5q3XsNMyvNU4NV3swC0kAUXNGOJdfHjZ8dKcQZ7KZZZFw87XceKFThkAobOcDZnCn3biN4NQq1S/U0lKWKWqIBvGq/NAhPTgz5NoAcmaVVOx2L3iiWUgZwIi5x1rBgnFCuZreqWjGH6NRFNw4InCpZ8n+eScKxYjtSCIRZjLtCSqwXCqBJmW3q9+5z/C+I8Vy8VMcgB0Vp5QjgFRVareYZDwSZVWmHIp2ZINMEKT1VWEFVkdbYlJyyvMkpZhAuhLttt1YCvqeIyqaYovYGZLUURJ1+qRFr1Aq3TLHIWUJbq/OiAYXMIPpou5PLbRvAVT8pMmswISbCov6IpwxlZXHEm9HEnRRzC2I6Flcp4WCgtE4whYFSzT1BK1XvBSCZYeZwxTlOezIM0k3e83BDkx/ZcwIcdCbmE+TmfJzYmOlYbThDbV9A+KZu/44zrwD/DMjB53bHyVX4pcJ434cMZBP8UWn2VjG05enZQmk5PJhlP1XvY6o6ZYNcdA2BvfMjTtN94t7VmA+F90Ov7PW/oBgupmAhCKW914JmU8T5xT4w+jcYjlDc0ahc9Hokhca/tuj0Xfak6DIe9EzmsnGgwnAF7qroeKuqQMvJq9EbONnoHkHsZqNUAHc3aNlO/hxswSh5U5jexlZs/g6enKHJ8Pwz9cDD0Gi+OSUSHYeTjIfEa7y3h/s1inN0G5f3bQqm3z4u5VU7j4ggtGy7gvhYFZeivjahDOg0owCxcgMkuJaD03VWZ3ZoS95eqVWVNpCSCwxQrqFG1JN3YVDC1wArxHOVwWjaaScRNVK0ZHbSSBYqLXMEwBT1bAG6Vvf7LZs9YwrROHvXLq4Dz/BAODhcE3JgbLwIlt56SeRHqCOx2Rao/OLXnBcv1K80uPbdeo31Yn7fIaWwfEWJd8+R+vAbhHE43me8QPN00Gnq9w/RWJW0P3lYJc142SK+FEy1c8JiXpqgIPz869KCvmLNlJUJa6Jzht+qIzTemvrzcV3KKqfvPK0lvrn6Vru4d/F9n/paXwnPb+ojdN7b+Y8fX4cnGHrwZ+39k7MFha5EtM8Gr5G9GVMvcf8LLV/+FfjAv+x2n73af+ER5WtvG9tNa2WNqT7G///ZYeRHuP7/V8UE7Re72vSnpquXzm8JxPJIirbmreLKKCYM3uQohMbdlJ72xbqph7CMTQiLIJsIZ07+LdjX9XVr173Nilj96+mkcHRF4XT6qsPfyYAhaqFjs8PNx9vm6oWf4i8XDHww8/42fs1SPdEldmsk0NbGduYL8/A86O2faeRkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=14f4972583749a100c7dcdc6feaad3c7"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=14f4972583749a100c7dcdc6feaad3c7"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=14f4972583749a100c7dcdc6feaad3c7"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=14f4972583749a100c7dcdc6feaad3c7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_14f4972583749a100c7dcdc6feaad3c7^sys_idNOT IN3cf4d72583749a100c7dcdc6feaad3b4,b8f4d72583749a100c7dcdc6feaad39a,bcf4d72583749a100c7dcdc6feaad32e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>room_status</element>
+        <help/>
+        <hint/>
+        <label>Room_Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_14f4972583749a100c7dcdc6feaad3c7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:13</sys_created_on>
+        <sys_id>3cf4d72583749a100c7dcdc6feaad3b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>booking_room_status</element>
+        <help/>
+        <hint/>
+        <label>Booking_Room_Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_14f4972583749a100c7dcdc6feaad3c7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:12</sys_created_on>
+        <sys_id>b8f4d72583749a100c7dcdc6feaad39a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>booking_room</element>
+        <help/>
+        <hint/>
+        <label>Booking_Room</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_14f4972583749a100c7dcdc6feaad3c7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:12</sys_created_on>
+        <sys_id>bcf4d72583749a100c7dcdc6feaad32e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:47:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_14f4972583749a100c7dcdc6feaad3c7"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_14f4972583749a100c7dcdc6feaad3c7"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_14f4972583749a100c7dcdc6feaad3c7"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>87b0dba583f09a100c7dcdc6feaad3b7</sys_id>
+        <latest_snapshot>14f4972583749a100c7dcdc6feaad3c7</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=87b0dba583f09a100c7dcdc6feaad3b7"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=87b0dba583f09a100c7dcdc6feaad3b7^sys_idNOT IN8df41b2583749a100c7dcdc6feaad321"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@7cbb04f6</plan>
+        <plan_id display_value="HBS: Change Booking Room Status and Send Email to guest.">87b0dba583f09a100c7dcdc6feaad3b7</plan_id>
+        <snapshot>14f4972583749a100c7dcdc6feaad3c7</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-22 14:47:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8df41b2583749a100c7dcdc6feaad321</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-22 14:52:55</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

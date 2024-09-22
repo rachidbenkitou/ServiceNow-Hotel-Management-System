@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="fea7c801837c1210f7c511b6feaad35e" label="Payment_Status" max_length="40" name="x_1461372_hotel_payment_status" type="collection">
-        <element label="Payment status name" max_length="60" name="payment_status_name" type="string"/>
+        <element display="true" label="Payment status name" max_length="60" name="payment_status_name" type="string"/>
     </element>
 </database>

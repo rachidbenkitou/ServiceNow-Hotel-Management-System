@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="52d684cd833c1210f7c511b6feaad3cd" label="Booking" max_length="40" name="x_1461372_hotel_booking" type="collection">
-        <element label="Checkin date" max_length="40" name="checkin_date" type="glide_date_time"/>
-        <element label="Num adults" max_length="40" name="num_adults" type="integer"/>
-        <element label="Booking amount" max_length="20" name="booking_amount" type="decimal"/>
-        <element label="Checkout date" max_length="40" name="checkout_date" type="glide_date_time"/>
-        <element label="Guest" max_length="32" name="guest_id" reference="x_1461372_hotel_guest" type="reference"/>
         <element label="Num children" max_length="40" name="num_children" type="integer"/>
+        <element label="Guest" max_length="32" name="guest_id" reference="sys_user" type="reference"/>
+        <element label="Num adults" max_length="40" name="num_adults" type="integer"/>
+        <element label="Checkout date" max_length="40" name="checkout_date" type="glide_date_time"/>
         <element label="Payment status" max_length="32" name="payment_status_id" reference="x_1461372_hotel_payment_status" type="reference"/>
+        <element label="Booking amount" max_length="20" name="booking_amount" type="decimal"/>
+        <element label="Checkin date" max_length="40" name="checkin_date" type="glide_date_time"/>
         <index name="index">
             <element name="guest_id"/>
         </index>
