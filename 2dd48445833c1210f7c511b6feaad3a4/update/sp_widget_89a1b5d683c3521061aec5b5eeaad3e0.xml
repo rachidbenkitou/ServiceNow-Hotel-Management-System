@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  z-index: 1000;
+}
+
+body {
+  min-height: 100vh;
+  background: #F0F4FF;
+}
+.sidebar {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 85px;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  background: #161a2d;
+  padding: 25px 20px;
+  transition: all 0.4s ease;
+}
+
+.sidebar:hover {
+  width: 260px;
+}
+
+.sidebar .sidebar-header {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .sidebar-header img {
+  width: 42px;
+  border-radius: 50%;
+}
+
+.sidebar .sidebar-header h2 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 23px;
+}
+
+.sidebar-links h4 {
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 10px 0;
+  position: relative;
+}
+
+.sidebar-links h4 span {
+  opacity: 0;
+}
+
+.sidebar:hover .sidebar-links h4 span {
+  opacity: 1;
+}
+
+.sidebar-links .menu-separator {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(1);
+  transform: translateY(-50%);
+  background: #4f52ba;
+  transform-origin: right;
+  transition-delay: 0.2s;
+}
+
+.sidebar:hover .sidebar-links .menu-separator {
+  transition-delay: 0s;
+  transform: scaleX(0);
+}
+
+.sidebar-links {
+  list-style: none;
+  margin-top: 20px;
+  height: 80%;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.sidebar-links::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar-links li a {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 15px 10px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.sidebar-links li a:hover {
+  color: #161a2d;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.user-account {
+  margin-top: auto;
+  padding: 12px 10px;
+  margin-left: -10px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  color: #161a2d;
+}
+
+.user-profile img {
+  width: 42px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.user-profile h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.user-profile span {
+  font-size: 0.775rem;
+  font-weight: 600;
+}
+
+.user-detail {
+  margin-left: 23px;
+  white-space: nowrap;
+}
+
+.sidebar:hover .user-account {
+  background: #fff;
+  border-radius: 4px;
+}
+@media screen and (max-width : 767px) {
+ 	.sidebar {
+  	  width: 260px;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>hotel-management-sidebar</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Hotel-Management-Sidebar</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 11:50:02</sys_created_on>
+        <sys_id>89a1b5d683c3521061aec5b5eeaad3e0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Hotel-Management-Sidebar</sys_name>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name>sp_widget_89a1b5d683c3521061aec5b5eeaad3e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 12:14:10</sys_updated_on>
+        <template><![CDATA[<aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="images/logo.png" alt="logo" />
+      <h2>CodingLab</h2>
+    </div>
+    <ul class="sidebar-links">
+      <h4>
+        <span>Main Menu</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li>
+        <a href="#">
+          <span class="material-symbols-outlined"> dashboard </span>Dashboard</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> overview </span>Overview</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> monitoring </span>Analytic</a>
+      </li>
+      <h4>
+        <span>General</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> folder </span>Projects</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> groups </span>Groups</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> move_up </span>Transfer</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> flag </span>All Reports</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined">
+            notifications_active </span>Notifications</a>
+      </li>
+      <h4>
+        <span>Account</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> account_circle </span>Profile</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> settings </span>Settings</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> logout </span>Logout</a>
+      </li>
+    </ul>
+    <div class="user-account">
+      <div class="user-profile">
+        <img src="images/profile-img.jpg" alt="Profile Image" />
+        <div class="user-detail">
+          <h3>Eva Murphy</h3>
+          <span>Web Developer</span>
+        </div>
+      </div>
+    </div>
+  </aside>]]></template>
+    </sp_widget>
+</record_update>

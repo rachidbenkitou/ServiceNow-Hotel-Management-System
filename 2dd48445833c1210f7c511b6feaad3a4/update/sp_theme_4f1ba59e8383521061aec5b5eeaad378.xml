@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
     <sp_theme action="INSERT_OR_UPDATE">
-        <css_variables/>
+        <css_variables>$nr-sidebar-width: 85px !default;&#13;
+$nr-sidebar-color: #eee !default;</css_variables>
         <footer/>
         <footer_fixed>true</footer_fixed>
         <header display_value="Hotel-Header">ac3bad9e8383521061aec5b5eeaad39a</header>
@@ -10,14 +11,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-14 11:21:45</sys_created_on>
         <sys_id>4f1ba59e8383521061aec5b5eeaad378</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Hotel-Theme</sys_name>
         <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
         <sys_update_name>sp_theme_4f1ba59e8383521061aec5b5eeaad378</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-14 11:23:15</sys_updated_on>
+        <sys_updated_on>2025-01-14 11:53:20</sys_updated_on>
         <turn_off_scss_compilation>false</turn_off_scss_compilation>
     </sp_theme>
 </record_update>
