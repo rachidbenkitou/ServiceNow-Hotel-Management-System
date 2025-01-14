@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css">
+    <sp_css action="INSERT_OR_UPDATE">
+        <css>$nr-sidebar-width: 260px !default;&#13;
+&#13;
+.sp-page-root.page {&#13;
+  height: 100% !important;&#13;
+  padding-left: $nr-sidebar-width;&#13;
+&#13;
+  .container {&#13;
+    width: 100% !important;&#13;
+    max-width: 1660px !important;&#13;
+    padding-left: 30px;&#13;
+    padding-right: 30px;&#13;
+    margin: auto;&#13;
+  }&#13;
+&#13;
+  .container-fluid {&#13;
+    padding-left: 30px;&#13;
+    padding-right: 30px;&#13;
+    margin: auto;&#13;
+  }&#13;
+&#13;
+}&#13;
+&#13;
+@media (max-width: 767px) {&#13;
+  .sp-page-root.page {&#13;
+    padding-left: 0px;&#13;
+&#13;
+    .container, .container-fluid {&#13;
+      padding-left: 15px;&#13;
+      padding-right: 15px;&#13;
+    }&#13;
+  }&#13;
+}</css>
+        <name>Hotel-Stylesheet</name>
+        <sys_class_name>sp_css</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-14 11:44:37</sys_created_on>
+        <sys_id>9f40b95683c3521061aec5b5eeaad3e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hotel-Stylesheet</sys_name>
+        <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
+        <sys_update_name>sp_css_9f40b95683c3521061aec5b5eeaad3e6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-14 11:44:37</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_css>
+</record_update>
