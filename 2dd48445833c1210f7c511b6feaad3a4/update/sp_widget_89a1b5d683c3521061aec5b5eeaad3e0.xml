@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <client_script><![CDATA[api.controller = function ($rootScope) {
+  var c = this;
+
+  c.active = false;
+
+  c.toggleSidebar = function () {
+    c.active = !c.active;
+  };
+
+  // Listen for the toggleSidebar event
+  $rootScope.$on('toggleSidebar', function () {
+    c.toggleSidebar();
+  });
+
+  // Close the sidebar on location change
+  $rootScope.$on('$locationChangeSuccess', function () {
+    c.active = false;
+  });
+};
+]]></client_script>
         <controller_as>c</controller_as>
         <css>
 * {
@@ -153,14 +172,21 @@ body {
   border-radius: 4px;
 }
   .fa-bold-and-big {
-    font-size: 22px; /* Adjust the size as needed */
-    font-weight: bold; /* Makes the font bold */
+    font-size: 22px;
+    font-weight: bold;
   }
-@media screen and (max-width : 767px) {
- 	.sidebar {
-  	  width: 260px;
+@media screen and (max-width: 767px) {
+  .sidebar {
+    left: -260px; /* Sidebar is hidden by default */
+    width: 260px;
+    transition: left 0.3s ease-in-out;
   }
-}</css>
+
+  .sidebar.sidebar-active {
+    left: 0;
+  }
+}
+</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
         <description/>
@@ -180,15 +206,15 @@ body {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-14 11:50:02</sys_created_on>
         <sys_id>89a1b5d683c3521061aec5b5eeaad3e0</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>Hotel-Management-Sidebar</sys_name>
         <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
         <sys_update_name>sp_widget_89a1b5d683c3521061aec5b5eeaad3e0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-14 14:45:46</sys_updated_on>
-        <template><![CDATA[<aside class="sidebar">
+        <sys_updated_on>2025-01-14 20:03:18</sys_updated_on>
+        <template><![CDATA[<aside class="sidebar" ng-class="{'sidebar-active': c.active}">
     <div class="sidebar-header">
       <img src="https://www.freeiconspng.com/thumbs/logo-design/rainbow-logo-design-transparent-0.png" alt="logo" />
       <h2>CodingLab</h2>

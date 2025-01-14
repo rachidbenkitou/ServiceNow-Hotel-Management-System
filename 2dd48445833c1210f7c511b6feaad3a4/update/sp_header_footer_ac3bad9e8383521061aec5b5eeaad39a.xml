@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_header_footer">
     <sp_header_footer action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function($rootScope, $scope, $window) {
-	var c = this;
+        <client_script><![CDATA[api.controller = function ($rootScope, $scope, $window) {
+  var c = this;
 
-	c.toggleNav = function() {
-		$rootScope.$broadcast('toggleSidebar');
-	}
+  c.toggleNav = function () {
+    $rootScope.$broadcast('toggleSidebar');
+  };
 
-	$scope.avatarProfile = {
-		userID: $scope.user.sys_id,
-		name: $scope.user.name,
-		initials: $window.NOW.user_initials
-	};
-
-	if ($window.NOW.user_avatar) {
-		$scope.avatarProfile.userImage = $window.NOW.user_avatar;
-	}
-
-};]]></client_script>
+  // Set avatar profile details
+  $scope.avatarProfile = {
+    userID: $scope.user.sys_id,
+    name: $scope.user.name,
+    initials: $window.NOW.user_initials,
+    userImage: $window.NOW.user_avatar || null,
+  };
+};
+]]></client_script>
         <controller_as>c</controller_as>
         <css>$nr-sidebar-width: 260px !default;&#13;
 &#13;
@@ -104,14 +102,14 @@ a.profile-avatar {&#13;
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-14 11:22:29</sys_created_on>
         <sys_id>ac3bad9e8383521061aec5b5eeaad39a</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Hotel-Header</sys_name>
         <sys_package display_value="Hotel Booking System" source="x_1461372_hotel">2dd48445833c1210f7c511b6feaad3a4</sys_package>
         <sys_policy/>
         <sys_scope display_value="Hotel Booking System">2dd48445833c1210f7c511b6feaad3a4</sys_scope>
         <sys_update_name>sp_header_footer_ac3bad9e8383521061aec5b5eeaad39a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-14 11:52:30</sys_updated_on>
+        <sys_updated_on>2025-01-14 20:00:23</sys_updated_on>
         <template><![CDATA[<div>
   <nav class="navbar-inverse" ng-class="::{'navbar':!isViewNative, 'is-native': isViewNative}"
        role="navigation">
